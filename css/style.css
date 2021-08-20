@@ -17,9 +17,9 @@
     --color-principal: #3822E4;
 }
 
-header {
-    height: 100vh;
-}
+/* header {
+     height: 100vh; 
+} */
 
 nav{
     font-family: var(--fuente-nav);
@@ -29,7 +29,7 @@ nav{
 nav {
     color: white;
     font-size: 25px;
-    height: 100px;
+    height: 10.2%;
     /* position: fixed; */
 }
 
@@ -190,6 +190,7 @@ nav .navleft .socialMedia{
     position: relative;
     background-color: #3822E4;
     padding: 15px 0;
+    padding-bottom: 10PX;
     width: 48px;
     top: 75px;
     height: 105px;
@@ -300,7 +301,7 @@ nav .socialMedia{
     padding: 8px 0;
 }
 
-/*****/
+/**sdsad**/
 .music{
     margin: 0 auto;
     white-space: nowrap;
@@ -312,7 +313,7 @@ nav .socialMedia{
 .music span {
     display: inline-block;
     padding-left: 100%;
-    animation: musica 10s linear infinite;
+    animation: musica 17s linear infinite;
     animation-iteration-count: 1;
     font-family: "Manuka";
     font-size: 50px;
@@ -338,13 +339,13 @@ nav .socialMedia{
 .letra span {
     display: inline-block;
     padding-left: 100%;
-    animation: letra 20s linear infinite;
+    animation: letra 34s linear infinite;
     font-family: "Manuka";
     font-size: 50px;
 }
   
 .tata span {
-    animation-delay: 10s;
+    animation-delay: 17s;
 }
   
 @keyframes letra {
@@ -368,7 +369,7 @@ nav .socialMedia{
 .marqu3 span {
     display: inline-block;
     padding-left: 100%;
-    animation: marqu3 30s linear infinite;
+    animation: marqu3 34s linear infinite;
     animation-iteration-count: 1;
     font-family: "Manuka";
     font-size: 50px;
@@ -391,15 +392,15 @@ nav .socialMedia{
 }
   
 .marquo span {
-    display: inline-block;
+    display: inline-block; 
     padding-left: 100%;
-    animation: marquo 20s linear infinite;
+    animation: marquo 22.7s linear infinite;
     font-family: "Manuka";
     font-size: 50px;
 }
   
 .marquo2 span {
-    animation-delay: 10s;
+    animation-delay: 11.35s;
 }
   
 @keyframes marquo {
@@ -504,7 +505,7 @@ nav .down p{
     font-size: 20.18px;
     font-family: var(--fuente-Manrope);
     color: #3822E4;
-    width: 516px;
+    width: 400px;
 }
 
 .contacto .flexcont .rightContacto .contact-text .btnMeeting{
@@ -1099,6 +1100,7 @@ form fieldset .btn {
     align-items: center;
 }
 
+
 .pagbtnc .btn2{
     padding: 1% 1.2%;
 }
@@ -1135,10 +1137,9 @@ form fieldset .btn {
 
 .home {
     color: #3822E4;
-    padding: 0 230px;
+    padding: 0 12%; /*230*/
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
 }
 
 .home .home-text2 {
@@ -1148,40 +1149,41 @@ form fieldset .btn {
 }
 
 .home .home-text img{
-    padding-left: 285px;
+    padding-left: 360px; /*285px*/
 }
 
 .home .home-text .cabeza{
     font-family: var(--fuente-home);
     font-style: italic;
-    font-size: 82.77px;
+    font-size: 99.72px;
 }
 
 .home .home-text .pie {
     font-family: var(--fuente-Manrope);
-    font-size: 69.87px;
+    font-size: 84.17px;
     font-weight: 500;
     padding-top: 10px;
 }   
 
 .home .text{
     font-family: var(--fuente-Manrope);
-    width: 427px;
-    font-size: 28px;
+    width: 427px; /*427 42%*/
+    font-size: 175%; /*28px*/
     padding-top: 45px;
 }
 
 .home .botones {
-    padding: 46px 150px;
+    padding-top: 55px;
 }
 
 .home .botones ul{
     list-style: none;
     color: #3822E4;
+    padding-left: 8px;
 }
 
 .home .botones{
-    width: 320px;
+    width: 30%; /*300px*/
 }
 
 .home .botones a{   
@@ -1191,7 +1193,7 @@ form fieldset .btn {
     font-weight: 500;
     color: #3822E4;    
     border: 1px solid #3822E4;
-    padding: 5px 50px;
+    padding: 5px 15%; /*50px*/
     border-radius: 25px;
 }
 
@@ -1201,7 +1203,7 @@ form fieldset .btn {
 
 .home .botones ul li{    
     border-color: #3822E4 !important;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .home .icon{
@@ -1228,7 +1230,7 @@ form fieldset .btn {
 }
 .home .home-text2 .icon .icon-hover{
     position: relative;
-    top: -30px;
+    top: -15%;
     width: 300px;
     height: 350px;
     /* z-index: -1; */
@@ -1321,6 +1323,7 @@ form fieldset .btn {
 .selecttWork .cards .card .imgss{
     background-color: white;
     height: 530px;
+    width: 100%;
 }
 
 .selecttWork .cards .card .product2{
@@ -1329,6 +1332,9 @@ form fieldset .btn {
 
 .card .imho{
     background: url(../icons/Productos.svg) no-repeat;        
+    width: 100%;
+    height: 100%;
+    background-size: cover;
 }
 
 .card .imho:hover{
@@ -1344,11 +1350,11 @@ form fieldset .btn {
 .card .imm{
     background: url(../icons/producto-3.svg);
     background-size: cover;
-    position: relative;
+    /* position: relative;
     display: flex;
-    flex-flow: row;
-    width: 100%;
-    height: 800px;
+    flex-flow: row; */
+    /* width: 100%; */
+    /* height: 800px; */
 }
 
 .card .imm:hover{
@@ -1743,7 +1749,7 @@ form fieldset .btn {
 /* Seccion partnerds*/
 
 .partnerds{
-    height: 800px;
+    height: 700px;
     padding: 50px 0;    
     text-align: center;
 }
@@ -1766,13 +1772,31 @@ form fieldset .btn {
     padding: 15px 20px;
 }
 
-
 .wrapper {
     display: grid;
-    grid-template-columns: 300px 300px 300px 300px;
-    grid-gap: 10px;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-gap: 5%;
     background-color: #fff;
     color: #444;
+}
+
+.wrapper img{
+    width: 110%;
+}
+
+.wrapper .g img{
+    position: relative;
+    top: -10px;
+    width: 80%;
+}
+
+.wrapper .h img {
+    width: 60%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    left: 60px;
 }
   
 .box {
@@ -1822,13 +1846,13 @@ form fieldset .btn {
 
 .tarjeta{
 	width: 300px;
-	height: 365px;
+	height: 400px;
 	background: white;
 	position: relative;
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 	-webkit-transition: .7s ease;
-	transition: .7s ease;
+	transition: .1s ease;
     border: 3px solid #3822E4;
     border-radius: 25px;
 }
@@ -1841,13 +1865,17 @@ form fieldset .btn {
 	left: 0;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 
 .atras{
 	-webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
-    height: 336px;
+    height: 370px;
     width: 271px;
 	padding: 15px;
 	display: -webkit-box;
@@ -1889,13 +1917,15 @@ form fieldset .btn {
 
 .wrap .tarjeta .adelante .servicess-img{
     text-align: center;
+    justify-content: center;
     margin: 25px;
-    padding-top: 10px;
+    margin-bottom: 35px;
+    padding-top: auto;
 }
 
 .wrap .tarjeta .adelante .servicess-img .flecha2{
     position: absolute;
-    top: 168px;
+    top: 180px;
     left: 55px;
 }
 
@@ -2002,7 +2032,7 @@ form fieldset .btn {
 
 .wrap .tarjeta .adelante .creation .flecha2 {
     position: absolute;
-    top: 190px;
+    top: 215px;
     left: 150px;
 }
 
@@ -2015,3 +2045,397 @@ form fieldset .btn {
     width: 40px;
 }
 
+.portfolio .cards .cardpad{
+    margin-right: 5%;
+}
+
+@media (min-width: 1051px) and (max-width: 1440px) {
+
+    nav{
+        height: 8%;
+    }
+
+    .home .text {
+        width: 400px;
+        font-size: 28px;
+    } 
+
+    .home .botones{
+        width: 27%;
+    } 
+
+    .home .home-text .cabeza{
+        font-size: 82.77px;       
+    } 
+
+    .home .home-text img{
+        padding-left: 295px; 
+    }
+
+    .home .home-text .pie {
+        font-size: 69.87px;
+    }
+
+    .home .botones a{
+        padding: 5px 30px;
+        font-size: 32.94px;
+    } 
+
+    .home .botones ul{
+        padding-left: 17px;
+    }
+
+    /*Seccion portfolio*/
+
+    .portfolio .container{
+        padding: 0 150px;
+    }
+
+    .portfolio .cards .card{
+        width: 530px;
+    }
+
+    .portfolio .cards .cardpad{
+        margin-right: 5%;
+    }
+
+    .portfolio .cards .card .imgss{
+        height: 420px;
+        /* width: 450px; */
+    }
+
+    .selecttWork .cards {
+        padding-bottom: 70px;
+    }
+    
+
+    /*Seccion services*/
+
+    .wrap .tarjeta .adelante .servicess-img h2{
+        font-size: 42.17px;
+    }
+
+    .tarjeta {
+        width: 290px;
+    }
+
+    .atras{
+        width: 260px;
+    }
+
+    /*seccion about*/
+    .digital p{
+        padding: 0 0;
+        font-size: 30px;
+    }
+    
+    .digital .container{
+        padding: 0 200px;
+    }
+
+    .digital .margen{
+        padding: 0 100px;
+    }
+
+    /* secion partnerd*/
+
+    .partnerds {
+        height: 650px;
+    }
+
+    .partnerds .container{
+        padding: 0 200px;
+    }
+
+    .partnerds .margen{
+        padding: 0 0;
+    }
+
+    .wrapper img{
+        width: 120%;
+    }
+
+    /*Pantallas*/ 
+
+    /* .contacto .flexcont {
+        width: 100px;
+    } */
+
+    .contacto .flexcont .rightContacto .contact-text p{
+        width: 450px;
+    }
+
+     .contacto .flexcont .rightContacto .form{
+        width: 200px;
+    } 
+
+    /*
+
+    .contacto .flexcont .rightContacto .contact-text{
+        width: 100px;
+    }
+*/
+    .contacto .flexcont .rightContacto .contact-text .conttextcont {
+        width: 200px !important;
+    }    
+
+    .contacto .flexcont .rightContacto{
+        width: 500px;
+    }     
+
+}
+
+
+
+@media (min-width: 850px) and (max-width: 1050px) {
+
+    nav .navleft .about,
+    nav .navleft .services,
+    nav .navleft .socialMedia,
+    nav .navRight .contact,
+    nav .navRight .portfolio,
+    nav .navRight .dark{
+        width: 40px;
+    }
+
+    nav .navleft .about{
+        text-align: center;
+        justify-content: center;
+    }
+
+    nav .navleft .about a{
+        text-align: center;
+        justify-content: center;  
+        padding-left: 0;
+    }
+
+    nav .navRight .portfolio{
+        text-align: center;
+        justify-content: center;
+    }
+
+    nav .navRight .portfolio a{
+        text-align: center;
+        justify-content: center;
+    }
+
+    nav .navleft a,
+    nav .navRight a{
+        font-size: 25px;
+    }
+
+    nav{
+        height: 8%;
+    }
+
+    .home {
+        padding: 0 105px;
+    } 
+
+    
+    .home .text {
+        width: 400px;
+        font-size: 28px;
+    }
+
+    .home .botones{
+        width: 27%;
+    }
+
+    .home .home-text .cabeza{
+        font-size: 60px;        
+    }
+
+    .home .home-text img{
+        padding-left: 215px;
+        width: 320px;
+    } 
+
+    .home .home-text .pie {
+        font-size: 50.93px;
+    }
+
+    .home .home-text2 .text{
+        width: 300px;
+    }
+
+    .home .home-text2 .text p{
+        font-size: 20.41px;
+    } 
+
+    .home .botones a{
+        padding: 5px 30px;
+        font-size: 24.01px;
+    }
+
+    .home .icon{
+        position: absolute;
+        padding-top: 110px;
+        transform: scale(0.8);
+        width: 250px;
+    }
+
+    .home .botones ul{
+        padding-left: 17px;
+    }
+
+    /*Seccion portfolio*/
+
+    .portfolio .container{
+        padding: 0 100px;
+    }
+
+    .portfolio .title h2{
+        font-size: 43.73px;
+    }
+
+    .portfolio .cards .card{
+        width: 400px;
+    }
+
+    .portfolio .cards .cardpad{
+        margin-right: 5%;
+    }
+
+    .portfolio .cards .card .imgss{
+        height: 330px;
+        /* width: 450px; */
+    }
+
+    .selecttWork .cards {
+        padding-bottom: 70px;
+    }
+
+    .selecttWork .cards .cards-text h3{
+        font-size: 15px;
+    }
+
+    .selecttWork .cards .cards-text h2{
+        font-size: 20px;
+    }
+
+    .selecttWork .cards .cards-text .fruts img{
+        width: 95px;
+    }    
+    
+
+    /*Seccion services*/
+
+    .servicess .services-title h2{
+        font-size: 43.73px;
+    }
+
+    .wrap .tarjeta .adelante .servicess-img h2{
+        font-size: 30.74px;
+    }
+
+    .tarjeta {
+        width: 220px;
+        height: 320px;
+    }
+
+    .wrap .tarjeta .adelante .servicess-img .icon-brand{
+        width: 170px;
+    }
+
+    .wrap .tarjeta .adelante .servicess-img .flecha2{
+        width: 25px;
+    }
+
+    .atras{
+        width: 190px;
+        height: 290px;
+    }
+
+    .wrap .tarjeta .atras .card1 h2{
+        font-size: 30px;
+    }
+
+    .wrap .tarjeta .atras .card1{
+        /* padding: 10px 100px; */
+        width: 180px;
+    }
+
+    .wrap .tarjeta .atras .card1 ul li{
+        font-size: 18px;
+    }
+
+    .wrap .tarjeta .atras .card1-button{
+        width: 170px;
+        height: 40px;
+    }
+
+    .wrap .tarjeta .atras .card1-button a h3{
+        font-size: 12px;
+        width: 150px;
+    }
+
+    /*seccion about*/
+.digital h2{
+    font-size: 43.73px;
+}
+
+    .digital p{
+        padding: 0 0;
+        font-size: 21.87px;
+    }
+    
+    .digital .container{
+        padding: 0 220px;
+    }
+
+    .digital .container .margen{
+        padding: 0 0;
+    }
+
+    .digital .digital-text img {
+        width: 89px;
+    }
+
+    /* secion partnerd*/
+
+    .partnerds {
+        height: 650px;
+    }
+
+    .partnerds .container{
+        padding: 0 200px;
+    }
+
+    .partnerds .margen{
+        padding: 0 0;
+    }
+
+    .wrapper img{
+        width: 120%;
+    }
+
+    /*Pantallas*/ 
+
+    /* .contacto .flexcont {
+        width: 100px;
+    } */
+
+    .contacto .flexcont .rightContacto .contact-text p{
+        width: 450px;
+    }
+
+    .contacto .flexcont .rightContacto .form{
+        width: 200px;
+    } 
+
+    /*
+
+    .contacto .flexcont .rightContacto .contact-text{
+        width: 100px;
+    }
+*/
+    .contacto .flexcont .rightContacto .contact-text .conttextcont {
+        width: 200px !important;
+    }    
+
+    .contacto .flexcont .rightContacto{
+        width: 500px;
+    }  
+
+}
