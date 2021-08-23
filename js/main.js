@@ -78,3 +78,81 @@ document.addEventListener("click", function(e){
         toggleNav4();
     }
 });
+
+
+/* Menuu movil */
+let boton = document.getElementById("iconomenu");
+let boton1 = document.getElementById("asd");
+let boton2 = document.getElementById("work");
+let boton3 = document.getElementById("whatwedo");
+let boton4 = document.getElementById("about");
+let boton5 = document.getElementById("contact");
+let enlaces = document.getElementById("enlaces");
+let contador = 0;
+
+boton.addEventListener("click",function(){
+    if(contador == 0){
+        enlaces.className = ('enlaces dos');
+        contador=1;
+    }else{
+        enlaces.classList.remove('dos');
+        enlaces.className = ('enlaces uno');
+        contador = 0;
+    }
+})
+
+boton1.addEventListener("click",function(){
+    enlaces.classList.remove('dos');
+        enlaces.className = ('enlaces uno');
+        contador = 0;
+})
+boton2.addEventListener("click",function(){
+    enlaces.classList.remove('dos');
+        enlaces.className = ('enlaces uno');
+        contador = 0;
+})
+boton3.addEventListener("click",function(){
+    enlaces.classList.remove('dos');
+        enlaces.className = ('enlaces uno');
+        contador = 0;
+})
+boton4.addEventListener("click",function(){
+    enlaces.classList.remove('dos');
+        enlaces.className = ('enlaces uno');
+        contador = 0;
+})
+boton5.addEventListener("click",function(){
+    enlaces.classList.remove('dos');
+        enlaces.className = ('enlaces uno');
+        contador = 0;
+})
+
+
+window.addEventListener("scroll",function(){
+    if(this.pageYOffset > 60){
+        document.querySelector(".iconomenu").classList.add("sticky");
+    }
+    else{
+        document.querySelector(".iconomenu").classList.remove("sticky");
+    }
+});
+
+
+// window.addEventListener('resize', function(){
+//     if(screen.width > 750){
+//         contador=0;
+//         enlaces.classList.remove('dos');
+//         enlaces.className = ('enlaces uno');
+
+//     }
+// })
+
+// window.addEventListener('click',function(e){
+//     console.log(e.target);
+//     if(cerrado==false){
+//         let span = document.querySelector('.links-header');
+//         if(e.target == span){
+//             contador=0;
+//         }
+//     }
+// });
