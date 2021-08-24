@@ -14,6 +14,23 @@ document.addEventListener("click", function(e){
     }
 });
 
+// /* Botonstart1 */
+
+// const navToggler5 = document.querySelector(".contact");
+// navToggler.addEventListener("click", toggleNav);
+
+// function toggleNav(){
+//     navToggler.classList.toggle("active");
+//     document.querySelector(".contacto").classList.toggle("open");
+// }
+
+// /* close nav when clicking on a nav item */
+// document.addEventListener("click", function(e){
+//     if(e.target.closest(".close")){
+//         toggleNav();
+//     }
+// });
+
 /* TOGGLE NAVBAR BRANDING*/
 const navToggler1 = document.querySelector(".branss");
 navToggler1.addEventListener("click", toggleNav1);
