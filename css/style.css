@@ -21,6 +21,7 @@
      height: 100vh; 
 } */
 
+
 main{
     padding-top: 90px;
 }
@@ -4042,7 +4043,9 @@ form fieldset .btn {
     }
 }
 
+
 @media (min-width: 376px) and (max-width: 450px){
+
 
     main{
         padding-top: 50px;
@@ -4159,6 +4162,10 @@ form fieldset .btn {
 
     /*partnerd*/
 
+    .partnerds{
+        height: 2000px;
+    }
+
     .partnerds .container {
         padding: 0 0;
     }
@@ -4186,9 +4193,82 @@ form fieldset .btn {
 
 }
 
+@media (max-width: 438px) {
+    .home .home-text2 .icon{
+        left: 120px;
+    }
+
+    .selecttWork .cards .card {
+        width: 100%;
+    }
+
+    .selecttWork .cards .card .imgss{
+        height: 300px;
+    }
+}
+
+@media (max-width: 408px){
+
+    .home .home-text img{
+        padding-left: 120px;
+    }
+    .home .home-text2 .text{
+        width: 350px;
+    }
+
+    .selecttWork .cards .card{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .selecttWork .cards .card .imgss{
+        height: 320px;
+    }
+
+    .home .home-text2 .icon{
+        left: 100px;
+    }
+
+    .selecttWork .cards .card .imgss{
+        height: 280px;
+    }
+}
+
+@media (max-width: 384px){
+    .selecttWork .cards .card{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .selecttWork .cards .card .imgss{
+        height: 320px;
+    }
+
+    .home .home-text img {
+        padding-left: 100px;
+    }
+
+    .home .home-text2 .text{
+        width: 300px;
+    }
+
+    .home .home-text2 .icon{
+        left: 90px;
+    }
+
+    .selecttWork .cards .card .imgss{
+        height: 270px;
+    }
+
+
+}
+
 
 @media (max-width: 375px){
 
+    main{
+        padding-top: 10px;
+    }
 
     .iconomenu::before{
         background-image: url(../icons/Group05.svg);
@@ -4321,10 +4401,10 @@ form fieldset .btn {
     .home .home-text2 .icon{
         position: relative;
         /* padding-top: 110px; */
-        transform: scale(0.8);
+        transform: scale(0.6);
         width: 250px;
         top: -70px;
-        left: 160px;
+        left: 80px;
     }
 
     .home .botones ul{
@@ -4472,5 +4552,106 @@ form fieldset .btn {
     .wrapper .h img{
         top: 5px;
         left: 40px;
+    }
+}
+
+@media (max-width: 375px){
+    .home .home-text .pie{
+        width: 320px;
+    }
+
+    .selecttWork .title{
+        width: 300px;
+    }
+
+    .selecttWork .cards .card {
+        width: 100%;
+    }
+    
+    .selecttWork .cards .card .imgss{
+        height: 260px;
+    }
+
+}
+
+@media (max-width: 341px) {
+    .home .home-text .pie{
+        width: 300px;
+    }
+
+    .home .home-text2 .icon{
+        left: 60px;
+    }
+
+    .selecttWork .cards .card {
+        width: 100%;
+    }
+    
+    .selecttWork .cards .card .imgss{
+        height: 240px;
+    }
+}
+
+@media (max-width: 325px) {
+    .home .home-text .cabeza{
+        width: 280px;
+    }
+
+    .home .home-text .pie{
+        width: 280px;
+    }
+
+    .home .botones{
+        width: 280px;
+    }
+
+    .selecttWork .title{
+        width: 280px;
+    }
+
+    .home .home-text2 .icon{
+        left: 40px;
+    }
+
+    .selecttWork .cards .card {
+        width: 100%;
+    }
+    
+    .selecttWork .cards .card .imgss{
+        height: 230px;
+    }
+}
+
+@media (max-width: 303px) {
+    .home .home-text .cabeza{
+        width: 250px;
+    }
+
+    .home .home-text .pie{
+        width: 250px;
+    }
+
+    .home .botones{
+        width: 250px;
+    }
+
+    .selecttWork .title{
+        width: 250px;
+    }
+
+    .partnerds .partnerds-logo{
+        width: 250px;
+    }
+
+    .home .home-text2 .icon{
+        left: 20px;
+    }
+
+    .selecttWork .cards .card {
+        width: 100%;
+    }
+    
+    .selecttWork .cards .card .imgss{
+        height: 200px;
     }
 }
