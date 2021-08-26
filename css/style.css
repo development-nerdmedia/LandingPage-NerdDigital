@@ -4832,7 +4832,7 @@ form fieldset .btn {
     .wrap2 .tarjeta-wrap{
         position: relative;
         top: -100px;
-        left: -354px;
+        left: -354px; /*-354*/
     }
 
     .wrap2 .tarjeta-wrap1{
@@ -4842,6 +4842,32 @@ form fieldset .btn {
     }
 
 
+}
+
+@media (max-width: 396px) {
+
+    .home .home-text img{
+        width: 230px;
+    }
+
+    /*tarjetas servicio*/
+
+    .wrap1{
+        transform: scale(0.52);
+        left: 25%;
+    }
+
+    .wrap2 .tarjeta-wrap{
+        position: relative;
+        top: -100px;
+        left: -344px; /*-354*/
+    }
+
+    .wrap2 .tarjeta-wrap1{
+        position: relative;
+        left: -323px; /*-335*/
+        top: -80px;/*-80px*/
+    }
 }
 
 @media (max-width: 384px){
