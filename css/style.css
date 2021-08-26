@@ -2231,6 +2231,12 @@ form fieldset .btn {
 
 } */
 
+@media (max-height: 960px) {
+    .home .home-text2 .icon {
+        top: -50px;
+    }
+}
+
 @media (max-height: 882px){
     nav .navleft,
     nav .navRight{
@@ -3001,7 +3007,6 @@ form fieldset .btn {
     }
 }
 
-
 @media (max-width: 1664px) {
     nav .navleft,
     nav .navRight{
@@ -3329,8 +3334,6 @@ form fieldset .btn {
     }     
 
 }
-
-
 
 @media (min-width: 850px) and (max-width: 1050px) {
 
@@ -4077,8 +4080,16 @@ form fieldset .btn {
 
     /* creation*/
 
-    .creationpage .container{
-        padding: 0 80px;
+    .creationpage .container {
+        padding: 0 30px;
+    }
+
+    .creationpage .padd .cabezapage h2{
+        font-size: 20px;
+    }
+
+    .creationpage .padd .cabezapage .closebrannn a img{
+        width: 30px;
     }
 
     .pagemid {
@@ -4088,6 +4099,19 @@ form fieldset .btn {
     .creationpage .pagemid h1{
         font-size: 60px;
         padding-bottom: 15px;
+    }
+
+    .creationpage .pagemid .title{
+        margin-bottom: 0;
+    }
+
+    .creationpage .icon-movil{
+        top: -80px;
+        left: 230px;
+    }
+
+    .creationpage .pagbtn a {
+        top: -25px;
     }
 
     .cabezapage{
