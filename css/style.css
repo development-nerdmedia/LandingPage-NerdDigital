@@ -35,6 +35,10 @@ nav .iconomenu{
     /* background-color: #3822E4; */
 }
 
+.icon-movil{
+    display: none;
+}
+
 .p1{
     display: none;
 }
@@ -3573,6 +3577,91 @@ form fieldset .btn {
 
 }
 
+@media  (max-width: 849px) {
+    
+    /*branding*/
+
+    .pagebranding .container{
+        padding: 0 80px;
+    }
+
+    .pagemid {
+        height: 650px;
+    }
+
+    .pagemid h1{
+        font-size: 60px;
+        padding-bottom: 80px;
+    }
+
+    .cabezapage{
+        padding-top: 45px;
+    }
+
+    .pagemid ul{
+        font-size: 35px;
+    }
+
+    .pagemid ul li{
+        padding-bottom: 14px;
+    }
+
+    /*ux ui*/
+
+    .ux-ui-design .container{
+        padding: 0 80px;
+    }
+
+    .pagemid {
+        height: 650px;
+    }
+
+    .ux-ui-design .pagemid h1{
+        font-size: 60px;
+        padding-bottom: 15px;
+    }
+
+    .cabezapage{
+        padding-top: 45px;
+    }
+
+    .pagemid ul{
+        font-size: 35px;
+    }
+
+    .pagemid ul li{
+        padding-bottom: 14px;
+    }
+
+    /* creation*/
+
+    .creationpage .container{
+        padding: 0 80px;
+    }
+
+    .pagemid {
+        height: 650px;
+    }
+
+    .creationpage .pagemid h1{
+        font-size: 60px;
+        padding-bottom: 15px;
+    }
+
+    .cabezapage{
+        padding-top: 45px;
+    }
+
+    .pagemid ul{
+        font-size: 35px;
+    }
+
+    .pagemid ul li{
+        padding-bottom: 14px;
+    }
+    
+}
+
 @media (min-width: 769px) and (max-width: 849px) {
 
     .iconomenu::before{
@@ -3817,6 +3906,9 @@ form fieldset .btn {
 }
 
 @media (max-width: 450px) {
+
+    
+
     .iconomenu img{
         z-index: 11 !important;
     }
@@ -3825,8 +3917,181 @@ form fieldset .btn {
         z-index: 11 !important;
     }
 
+    nav .enlaces .enlacescabeza {
+        height: 89%;
+        position: relative;
+    }
+
+    nav .enlaces{
+        height: 100vh;
+    }
+
+    nav .enlacescabeza .arriba{
+        align-items: center;
+    }
+
+    nav .enlaces .enlacescabeza .menumedio{
+        height: 600px;
+    }    
+
+    nav .enlaces .enlacescabeza .navbutton a{
+        font-size: 15px;
+    }
+
+    nav .enlaces .enlacescabeza .navbutton a img{
+        width: 40px;
+    }
+
     nav .enlacescabeza .arriba h2{
+        font-size: 20px !important;
+    }
+
+    nav .enlaces .enlacescabeza .menumedio{
+        padding-left: 50px;
+    }
+    
+    nav .enlaces .enlacescabeza .menumedio img {
+        width: 72px;
+        padding-bottom: 40px;
+    }
+
+    nav .enlacescabeza .menumedio ul{
+        font-family: var(--fuente-home);
+    }
+
+    nav .enlaces .enlacescabeza .menumedio ul li{
+        margin-bottom: 5px;
+    }
+
+    /*branding*/
+
+    .icon-movil{
+        display: block;
+        /* position: absolute; */
+        position: relative;
+        top: -50px;
+        left: 250px;
+        width: 110px;
+    }
+
+    .pagebranding .container{
+        padding: 0 30px;
+    }
+
+    .pagebranding .padd .cabezapage h2{
+        font-size: 20px;
+    }
+
+    .pagebranding .padd .cabezapage .closebran a img{
+        width: 30px;
+    }
+
+    .pagemid {
+        height: 650px;
+    }
+
+    .pagemid h1{
+        font-size: 60px;
+        padding-bottom: 20px;
+        font-family: var(--fuente-home);
+        font-style: italic;
+    }
+
+    .cabezapage{
+        padding-top: 45px;
+    }
+
+    .pagemid ul{
         font-size: 30px;
+        font-family: var(--fuente-home);
+    }
+
+    .pagemid ul li{
+        padding-bottom: 0px;
+        font-style: italic;
+    }
+
+    .pagbtn a{
+        width: 340px;
+        justify-content: space-around;
+        padding: 10px;
+        top: -20px;
+    }
+
+    .pagbtn a img{
+        width: 40px;
+    }
+
+    .pagbtn a h2{
+        font-size: 25px;
+    }
+
+    /*ux ui*/
+
+    .ux-ui-design .container {
+        padding: 0 30px;
+    }
+
+    .ux-ui-design .padd .cabezapage h2{
+        font-size: 20px;
+    }
+
+    .ux-ui-design .padd .cabezapage .closebrann a img{
+        width: 30px;
+    }
+
+    .ux-ui-design .pagemid{
+        height: 550px;
+    }
+
+    .ux-ui-design .icon-movil{
+        top: -70px;
+    }
+
+    .ux-ui-design .pagbtn a{
+        top: -35px;
+    }
+
+    .ux-ui-design .pagemid .title{
+        margin-bottom: 20px;
+    }
+
+    .pagemid {
+        height: 650px;
+    }
+
+    .ux-ui-design .pagemid h1{
+        font-size: 60px;
+        padding-bottom: 15px;
+        line-height: 60px;
+    }
+
+    .cabezapage{
+        padding-top: 45px;
+    }
+
+    .ux-ui-design .pagemid ul{
+        position: relative;
+        left: -20px;
+    }
+
+    /* creation*/
+
+    .creationpage .container{
+        padding: 0 80px;
+    }
+
+    .pagemid {
+        height: 550px;
+    }
+
+    .creationpage .pagemid h1{
+        font-size: 60px;
+        padding-bottom: 15px;
+    }
+
+    .cabezapage{
+        padding-top: 45px;
     }
 }
 
@@ -4105,9 +4370,7 @@ form fieldset .btn {
 
 @media (max-width: 450px){
 
-    nav .enlaces .enlacescabeza .menumedio{
-        height: 600px;
-    }
+    
 
     .servicess .container .margen .services-title p{
         display: block !important;
