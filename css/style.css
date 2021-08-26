@@ -682,8 +682,16 @@ nav .down p{
     width: 300px;
 }
 
+.contacto .rightContacto .close a{
+    cursor: pointer;
+}
+
 .contacto .flexcont .rightContacto .contact-text .btnMeeting:hover{
     background-color: #24FE7C;
+}
+
+.contacto .flexcont .rightContacto .contact-text .btnMeeting{
+    width: 320px;
 }
 
 .contacto .flexcont .rightContacto .contact-text .btnMeeting a{
@@ -694,6 +702,7 @@ nav .down p{
     font-size: 15px;
     font-weight: 800;
     padding: 10px 10px;
+    width: 300px;
 }
 .contacto .flexcont .rightContacto .contact-text .btnMeeting a h2{
     padding-right: 15px;
@@ -763,6 +772,14 @@ nav .down p{
 #fs-frm textarea {
   height: 120px;
 }
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }
 
 #fs-frm input:focus,
 #fs-frm select:focus,
@@ -2237,6 +2254,12 @@ form fieldset .btn {
     }
 }
 
+@media (max-height: 800px) {
+    .home .home-text2 .icon {
+        top: -120px;
+    }
+}
+
 @media (max-height: 882px){
     nav .navleft,
     nav .navRight{
@@ -3357,6 +3380,12 @@ form fieldset .btn {
     nav .navRight .portfolio,
     nav .navRight .dark{
         width: 50px;
+    }
+
+    nav .navleft .about,
+    nav .navleft .services,
+    nav .navleft .socialMedia{ 
+        width: 58px;
     }
 
     nav .navleft .about{

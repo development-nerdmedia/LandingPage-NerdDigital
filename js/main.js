@@ -14,22 +14,42 @@ document.addEventListener("click", function(e){
     }
 });
 
-// /* Botonstart1 */
+/* boton home */
+const navToggler5 = document.querySelector(".contactr");
+navToggler5.addEventListener("click", toggleNav5);
 
-// const navToggler5 = document.querySelector(".contact");
-// navToggler.addEventListener("click", toggleNav);
+function toggleNav5(){
+    navToggler5.classList.toggle("active");
+    document.querySelector(".contacto").classList.toggle("open");
+}
 
-// function toggleNav(){
-//     navToggler.classList.toggle("active");
-//     document.querySelector(".contacto").classList.toggle("open");
-// }
+/* boton servicios 1*/
+const navToggler6 = document.querySelector(".contacty");
+navToggler6.addEventListener("click", toggleNav5);
 
-// /* close nav when clicking on a nav item */
-// document.addEventListener("click", function(e){
-//     if(e.target.closest(".close")){
-//         toggleNav();
-//     }
-// });
+function toggleNav6(){
+    navToggler6.classList.toggle("active");
+    document.querySelector(".contacto").classList.toggle("open");
+}
+
+/* boton servicios 2*/
+const navToggler7 = document.querySelector(".contactu");
+navToggler7.addEventListener("click", toggleNav7);
+
+function toggleNav7(){
+    navToggler7.classList.toggle("active");
+    document.querySelector(".contacto").classList.toggle("open");
+}
+
+/* boton servicios 3*/
+const navToggler8 = document.querySelector(".contacti");
+navToggler8.addEventListener("click", toggleNav8);
+
+function toggleNav8(){
+    navToggler8.classList.toggle("active");
+    document.querySelector(".contacto").classList.toggle("open");
+}
+
 
 /* TOGGLE NAVBAR BRANDING*/
 const navToggler1 = document.querySelector(".branss");
