@@ -8,20 +8,63 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 :root{
     --fuente-nav: 'Epilogue', sans-serif;
     --fuente-home: 'Poppins', sans-serif;
     --fuente-Manrope: 'Manrope', sans-serif;
     --color-principal: #3822E4;
+    --color-bordes: #24FE7C;
+    --color-lista: #24FE7C;
     --fuente-anonymous:'Anonymous Pro', monospace;
+    --img-lista: url(../icons/icono-list.svg);
 }
 
 /* header {
      height: 100vh; 
 } */
 
+/* .change-theme{
+    position: absolute;
+    right: 1.5rem;
+    top: 2.2rem;
+    display: flex;
+    font-size: 2rem;
+    width: 500px;
+    height: 500px;
+} */
+
+body.dark-theme{
+    --color-principal: #ED0600;
+    --color-bordes: #FF97C9;
+    --color-lista: #fff;
+    --img-lista: url(../icons/iconolistarojo.svg);
+}
+
+.dark a.darkcambio img{
+    transform: rotate(180deg);
+}
+
+.nerdrojo{
+    display: none;
+}
+
+.partnerds .wrapper .h .nerdrojo{
+    display: none;
+}
+
+.contacto .flexcont .rightContacto .nerdrojo{
+    display: none;
+}
+
+.nerdrojoo{
+    display: inline-block;
+}
+
+.nerdazull{
+    display: none;
+}
 
 main{
     padding-top: 90px;
@@ -168,7 +211,7 @@ nav {
 }
 
 nav .margen{
-    background-color: #24FE7C;    
+    background-color: var(--color-bordes);    
     height: 10px;
     width: 1900px;
     position: fixed;
@@ -177,7 +220,7 @@ nav .margen{
 
 nav .margen-left{
     position: fixed;
-    background-color: #24FE7C;    
+    background-color: var(--color-bordes);    
     top: 0;
     width: 10px;
     height: 100vh;
@@ -186,7 +229,7 @@ nav .margen-left{
 
 nav .margen-right{
     position: fixed;
-    background-color: #24FE7C;    
+    background-color: var(--color-bordes);    
     top: 0;
     right: 0px;
     width: 10px;
@@ -200,7 +243,7 @@ nav .navbar{
 
 nav .margen-bottom{
     position: fixed;
-    background-color: #24FE7C;    
+    background-color: var(--color-bordes);    
     bottom: 0;
     width: 100%;
     height: 10px;
@@ -209,7 +252,7 @@ nav .margen-bottom{
 
 nav .top{
     text-align: center;
-    background-color: #3822E4;
+    background-color: var(--color-principal);
     margin-top: 10px;
     padding: 5px 0;
     margin-bottom: 5px;
@@ -220,13 +263,13 @@ nav .top{
 }
 nav .bot{
     text-align: center;
-    background-color: #3822E4;
+    background-color: var(--color-principal);
     padding: 5px 0;
     margin-bottom: 5px;
 }
 
 nav .bg-nav{
-    background-color: #3822E4;
+    background-color: var(--color-principal);
     padding: 15px 0;
     margin-bottom: 5px;
     text-align: center;
@@ -280,7 +323,7 @@ nav .navRight  a{
 
 nav .navleft .about{
     /* position: relative; */
-    background-color: #3822E4;
+    background-color: var(--color-principal);
     /* padding: 5% 0; */
     width: 58px;
     height: 40%;
@@ -317,7 +360,7 @@ nav .navRight .dark:hover{
 
 
 nav .navleft .services{
-    background-color: #3822E4;
+    background-color: var(--color-principal);
     /* padding: 5% 0; */
     margin-top: 10px;
     width: 58px;
@@ -338,7 +381,7 @@ nav .navleft .services a{
 }
 
 nav .navleft .socialMedia{   
-    background-color: #3822E4;
+    background-color: var(--color-principal);
     margin-top: 10px;
     width: 58px;
     height: 12.5%;
@@ -359,7 +402,7 @@ nav .navleft .socialMedia a{
 
 
 nav .down {
-    background-color: #3822E4;
+    background-color: var(--color-principal);
     bottom: 10px;
     padding: 5px 0;
     text-align: center;
@@ -374,7 +417,7 @@ nav .navRight .contact{
     width: 48px;
     right: 10px;
     height: 45%;
-    background: #3822E4;
+    background: var(--color-principal);
     text-align: center;
     z-index: 9;
     /* padding-top: 2%; */
@@ -393,7 +436,7 @@ nav .navRight .portfolio{
     height: 41%;
     margin-top: 10px;
     right: 10px;
-    background: #3822E4;
+    background: var(--color-principal);
     text-align: center;
     z-index: 9;
     display: flex;
@@ -407,7 +450,7 @@ nav .navRight .dark{
     width: 48px;
     right: 10px;
     margin-top: 10px;
-    background-color: #3822E4;
+    background-color: var(--color-principal);
     text-align: center;
     z-index: 9;
     padding: 10px 0;
@@ -466,6 +509,10 @@ nav .socialMedia img{
 
 nav .socialMedia{
     padding: 8px 0;
+}
+
+.dark a{
+    cursor: pointer;
 }
 
 /**sdsad**/
@@ -617,7 +664,7 @@ nav .down p{
 .contacto{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to right, #3822E4 0%, #3822E4 60%, #fff 40%, #fff 100%);
+    background: linear-gradient(to right, var(--color-principal) 0%, var(--color-principal) 60%, #fff 40%, #fff 100%);
     position: fixed;
     overflow-y: auto;
     transition: transform 0.5s ease;
@@ -639,6 +686,7 @@ nav .down p{
 .contacto .rightContacto .close a{
     position: absolute;
     top: 30px;
+    z-index: 11;
 }
 
 .contacto .rightContacto a img {
@@ -662,22 +710,25 @@ nav .down p{
 }
 
 .contacto .flexcont .rightContacto .contact-text h1{
-    color: #3822E4;
+    color: var(--color-principal);
     font-family: var(--fuente-Manrope);
     font-size: 50.44px;
+    font-style: italic;
+    font-weight: 800;
 }
 
 .contacto .flexcont .rightContacto .contact-text p{
     padding-top: 5%;
     font-size: 20.18px;
     font-family: var(--fuente-Manrope);
-    color: #3822E4;
+    color: var(--color-principal);
     width: 400px;
+    font-weight: 600;
 }
 
 .contacto .flexcont .rightContacto .contact-text .btnMeeting{
     margin-top: 5%;
-    border: 2px solid #3822E4;
+    border: 2px solid var(--color-principal);
     border-radius: 20px;
     width: 300px;
 }
@@ -697,7 +748,7 @@ nav .down p{
 .contacto .flexcont .rightContacto .contact-text .btnMeeting a{
     display: flex;
     text-decoration: none;
-    color: #3822E4;
+    color: var(--color-principal);
     font-family: var(--fuente-nav);
     font-size: 15px;
     font-weight: 800;
@@ -747,7 +798,7 @@ nav .down p{
   padding-top: 0.2rem;
   display: flex;
   align-items: baseline;
-  color: #3822E4;
+  color: var(--color-principal);
 }
 
 /* border, padding, margin, width */
@@ -755,18 +806,18 @@ nav .down p{
 #fs-frm select,
 #fs-frm textarea,
 #fs-frm #card-element {
-  border: 1px solid #3822E4;
-  background-color: #24FE7C;
-  color: #3822E4;
+  border: 1px solid var(--color-principal);
+  background-color: var(--color-bordes);
+  color: var(--color-principal);
   padding: 0.75em 1rem;
   margin-bottom: 1.5rem;  
   font-family: var(--fuente-Manrope);  
   font-weight: 400;
   font-size: 18px;
   border-radius: 0;
-  box-shadow: 17px 5px 0px 2px rgba(56,34,228,1);
--webkit-box-shadow: 17px 5px 0px 2px rgba(56,34,228,1);
--moz-box-shadow: 17px 5px 0px 2px rgba(56,34,228,1);
+  box-shadow: 17px 5px 0px 2px var(--color-principal);
+-webkit-box-shadow: 17px 5px 0px 2px var(--color-principal);
+-moz-box-shadow: 17px 5px 0px 2px var(--color-principal);
 }
 
 #fs-frm textarea {
@@ -787,7 +838,7 @@ input[type=number] { -moz-appearance:textfield; }
   background-color: transparent;
   outline-style: none;
   outline-width: thin;
-  outline-color: #3822E4;
+  outline-color: var(--color-principal);
   outline-offset: -1px;
   background-color: #24FE7C;
   font-family: var(--fuente-Manrope);
@@ -801,9 +852,9 @@ input[type=number] { -moz-appearance:textfield; }
 #fs-frm [type="reset"] {
   width: 150px;
   cursor: pointer;
-  color: #3822E4;
+  color: var(--color-principal);
   background-color: transparent;
-  border: 2px solid #3822E4;
+  border: 2px solid var(--color-principal);
   -webkit-appearance: button;
   -moz-appearance: button;
   appearance: button;
@@ -822,7 +873,7 @@ input[type=number] { -moz-appearance:textfield; }
   cursor: pointer;
   background-color: #24FE7C;
   /* background-color: var(--color-fuente-secundario); */
-  border: 2px solid #3822E4;
+  border: 2px solid var(--color-principal);
   -webkit-appearance: button;
   -moz-appearance: button;
   appearance: button;
@@ -833,7 +884,7 @@ input[type=number] { -moz-appearance:textfield; }
 #fs-frm [type="submit"]:focus,
 #fs-frm [type="reset"]:focus {
   outline: none;
-  color: #3822E4;
+  color: var(--color-principal);
 } 
 
 #fs-frm [type="submit"],
@@ -893,7 +944,7 @@ form fieldset .btn {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background-color: #3822E4;
+    background-color: var(--color-principal);
     z-index: 11;
     top: 0;
     overflow-y: auto;
@@ -987,7 +1038,7 @@ form fieldset .btn {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background-color: #3822E4;
+    background-color: var(--color-principal);
     z-index: 11;
     top: 0;
     overflow-y: auto;
@@ -1070,7 +1121,7 @@ form fieldset .btn {
 
 .pagbtn a h2 {
     padding-right: 10px;
-    font-size: 33px;
+    font-size: 30px;
     position: relative;
     top: 3px;
 }
@@ -1086,7 +1137,7 @@ form fieldset .btn {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background-color: #3822E4;
+    background-color: var(--color-principal);
     z-index: 11;
     top: 0;
     overflow-y: auto;
@@ -1135,8 +1186,8 @@ form fieldset .btn {
 }
 
 .pagemid ul{
-    color: #24FE7C;
-    list-style-image: url(../icons/icono-list.svg);
+    color: var(--color-lista);
+    list-style-image: var(--img-lista);
     font-family: var(--fuente-Manrope);
     font-size: 40px;
 }
@@ -1169,7 +1220,7 @@ form fieldset .btn {
 
 .pagbtn a h2 {
     padding-right: 10px;
-    font-size: 33px;
+    font-size: 30px;
     position: relative;
     top: 3px;
 }
@@ -1185,7 +1236,7 @@ form fieldset .btn {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background-color: #3822E4;
+    background-color: var(--color-principal);
     z-index: 11;
     top: 0;
     overflow-y: auto;
@@ -1266,7 +1317,7 @@ form fieldset .btn {
 }
 
 .pagbtnc a{
-    color: #3822E4;
+    color: var(--color-principal);
     background: #fff;
     text-decoration: none;    
     padding: 0.5% 2%;
@@ -1320,7 +1371,7 @@ form fieldset .btn {
 /* Seccion Home */
 
 .home {
-    color: #3822E4;
+    color: var(--color-principal);
     padding: 0 12%; /*230*/
     display: flex;
     flex-direction: column;
@@ -1348,7 +1399,6 @@ form fieldset .btn {
     font-family: var(--fuente-Manrope);
     font-size: 84.17px;
     font-weight: 500;
-    padding-top: 10px;
 }   
 
 .home .text{
@@ -1356,6 +1406,7 @@ form fieldset .btn {
     width: 427px; /*427 42%*/
     font-size: 175%; /*28px*/
     padding-top: 45px;
+    font-weight: 400;
 }
 
 .home .botones {
@@ -1364,7 +1415,7 @@ form fieldset .btn {
 
 .home .botones ul{
     list-style: none;
-    color: #3822E4;
+    color: var(--color-principal);
     padding-left: 8px;
 }
 
@@ -1377,18 +1428,19 @@ form fieldset .btn {
     font-family: var(--fuente-Manrope);
     font-size: 32.94px;
     font-weight: 500;
-    color: #3822E4;    
-    border: 1px solid #3822E4;
+    color: var(--color-principal);    
+    border: 1px solid var(--color-principal);
     padding: 5px 15%; /*50px*/
     border-radius: 25px;
+    cursor: pointer;
 }
 
 .home .botones a:hover{
-    background-color: #24FE7C;
+    background-color: var(--color-bordes);
 }
 
 .home .botones ul li{    
-    border-color: #3822E4 !important;
+    border-color: var(--color-principal) !important;
     margin-bottom: 40px;
 }
 
@@ -1435,7 +1487,7 @@ form fieldset .btn {
 
 .home .home-text2 .icon .icon-hover:hover{
     border-radius: 100%;
-    background-color: #24FE7C;
+    background-color: var(--color-bordes);
 }
 
 /* SECCION SELECTWORK*/
@@ -1758,6 +1810,10 @@ form fieldset .btn {
     padding: 100px 0;
 }
 
+.wrap .tarjeta .atras .ux .card1-button a img.padi{
+    width: 15px;
+}
+
 .margen{
     padding: 0 100px;
 }
@@ -1767,8 +1823,8 @@ form fieldset .btn {
 }
 
 .servicess .services-title h2{
-    color: #3822E4;
-    font-family: var(--fuente-home);
+    color: var(--color-principal);
+    font-family: var(--fuente-nav);
     font-size: 75px;
     font-weight: 800;
     padding-bottom: 50px;
@@ -1781,7 +1837,7 @@ form fieldset .btn {
 .servicess .services-cards .service-card{
     width: 342px;
     height: 413.81px;
-    border: 3px solid #3822E4;
+    border: 3px solid var(--color-principal);
     border-radius: 25px;
     text-align: center;
 }
@@ -1801,7 +1857,7 @@ form fieldset .btn {
 }
 
 .servicess .services-cards .service-card h2{
-    color: #3822E4;
+    color: var(--color-principal);
     font-family: var(--fuente-home);
     font-size: 52.76px;
 }
@@ -1843,7 +1899,7 @@ form fieldset .btn {
 
 .servicess .services-cards .service-card .card1{
     border-radius: 15px;
-    background-color: #3822E4;
+    background-color: var(--color-principal);
     height: 413.81px;
     text-align: left;
 }
@@ -1878,7 +1934,7 @@ form fieldset .btn {
 }
 
 .servicess .services-cards .service-card .card1 .card1-button h3 {
-    color: #3822E4;
+    color: var(--color-principal);
     /* width: 200px; */
     padding-top: 18px;
     font-family: var(--fuente-nav);
@@ -1916,10 +1972,14 @@ form fieldset .btn {
 
 .digital h2{
     color: var(--color-principal);
-    font-family: var(--fuente-home);
+    font-family: var(--fuente-nav);
     font-size: 75px;
     font-weight: 800;
     padding-bottom: 50px;
+}
+
+.digital .digital-text .imgvector{
+    width: 155px;
 }
 
 .digital p{
@@ -1927,6 +1987,7 @@ form fieldset .btn {
     color: var(--color-principal);
     font-size: 37.53px;
     padding: 0 90px;
+    font-weight: 400;
 }
 
 .digital .digital-text{
@@ -2044,7 +2105,7 @@ form fieldset .btn {
 	transform-style: preserve-3d;
 	-webkit-transition: .7s ease;
 	transition: .1s ease;
-    border: 3px solid #3822E4;
+    border: 3px solid var(--color-principal);
     border-radius: 25px;
 }
 
@@ -2078,7 +2139,7 @@ form fieldset .btn {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	color: #fff;
-    background: #3822E4;
+    background: var(--color-principal);
     border-radius: 20px;    
 }
 
@@ -2121,7 +2182,7 @@ form fieldset .btn {
 }
 
 .wrap .tarjeta .adelante .servicess-img h2{
-    color: #3822E4;
+    color: var(--color-principal);
     font-family: var(--fuente-nav);
     font-size: 50px;
     /* padding-top: px; */
@@ -2147,9 +2208,9 @@ form fieldset .btn {
 }
 
 .wrap .tarjeta .atras .card1 ul{
-    color: #24FE7C;
+    color: var(--color-lista);
     text-align: none;
-    list-style-image: url('../icons/icono-list.svg');
+    list-style-image: var(--img-lista);
     padding: 15px 25px;
 }
 
@@ -2168,11 +2229,11 @@ form fieldset .btn {
 }
 
 .wrap .tarjeta .atras .card1-button:hover {
-    background-color: #24FE7C;
+    background-color: var(--color-bordes);
 }
 
 .wrap .tarjeta .atras a{
-    color: #3822E4;
+    color: var(--color-principal);
     text-decoration: none;
     font-family: var(--fuente-nav);
     padding: 0 10px;
@@ -2240,27 +2301,56 @@ form fieldset .btn {
     margin-right: 5%;
 }
 
-/* @media (min-width: 1440px) and (max-width: 1790px){
-
-    .selecttWork .cards .card .imgss{
-        height: 200px
-    } 
-
-} */
-
 @media (max-height: 960px) {
     .home .home-text2 .icon {
         top: -50px;
     }
-}
 
-@media (max-height: 800px) {
-    .home .home-text2 .icon {
-        top: -120px;
+    @media (max-height: 800px) {
+        .home .home-text2 .icon {
+            top: -50px;
+        }
+
+        main{
+            padding-top: 40px;
+        }
+
     }
+
+    @media (max-height: 752px) {
+        .home .home-text2 .icon {
+            top: -130px;
+        }
+
+        .home .home-text .cabeza{
+            font-size: 85px;
+            height: 100px;
+        }
+
+        .home .home-text .pie{
+            font-size: 80px;
+            height: 100px;
+        }
+    }
+
+    @media (max-height: 672px) {
+        .home .home-text2 .icon {
+            top: -250px;
+        }
+    }
+
 }
 
 @media (max-height: 882px){
+
+    .contacto .flexcont .rightContacto .contact-text{
+        padding: 80px 0 0 30px;
+    }
+
+    .contacto .flexcont .rightContacto .contact-text p{
+        padding-top: 0;
+    }
+
     nav .navleft,
     nav .navRight{
         position: fixed;
@@ -2292,7 +2382,7 @@ form fieldset .btn {
     /*social*/
 
     nav .navleft .socialMedia{   
-        background-color: #3822E4;
+        background-color: var(--color-principal);
         margin-top: 10px;
         width: 58px;
         height: 13.2%;
@@ -2317,7 +2407,7 @@ form fieldset .btn {
         width: 48px;
         right: 10px;
         height: 43.4%;
-        background: #3822E4;
+        background: var(--color-principal);
         text-align: center;
         z-index: 9;
         /* padding-top: 2%; */
@@ -2339,7 +2429,7 @@ form fieldset .btn {
         height: 41%;
         margin-top: 10px;
         right: 10px;
-        background: #3822E4;
+        background: var(--color-principal);
         text-align: center;
         z-index: 9;
         display: flex;
@@ -2353,7 +2443,7 @@ form fieldset .btn {
         width: 48px;
         right: 10px;
         margin-top: 10px;
-        background-color: #3822E4;
+        background-color: var(--color-principal);
         text-align: center;
         z-index: 9;
         padding: 10px 0;
@@ -2392,7 +2482,7 @@ form fieldset .btn {
     /*social*/
 
     nav .navleft .socialMedia{   
-        background-color: #3822E4;
+        background-color: var(--color-principal);
         margin-top: 10px;
         width: 58px;
         height: 13.8%;
@@ -2417,7 +2507,7 @@ form fieldset .btn {
         width: 48px;
         right: 10px;
         height: 43.4%;
-        background: #3822E4;
+        background: var(--color-principal);
         text-align: center;
         z-index: 9;
         /* padding-top: 2%; */
@@ -2439,7 +2529,7 @@ form fieldset .btn {
         height: 40.2%;
         margin-top: 10px;
         right: 10px;
-        background: #3822E4;
+        background: var(--color-principal);
         text-align: center;
         z-index: 9;
         display: flex;
@@ -2453,7 +2543,7 @@ form fieldset .btn {
         width: 48px;
         right: 10px;
         margin-top: 10px;
-        background-color: #3822E4;
+        background-color: var(--color-principal);
         text-align: center;
         z-index: 9;
         padding: 10px 0;
@@ -2493,7 +2583,7 @@ form fieldset .btn {
     /*social*/
 
     nav .navleft .socialMedia{   
-        background-color: #3822E4;
+        background-color: var(--color-principal);
         margin-top: 10px;
         width: 58px;
         height: 16%;
@@ -2522,7 +2612,7 @@ form fieldset .btn {
         width: 48px;
         right: 10px;
         height: 43%;
-        background: #3822E4;
+        background: var(--color-principal);
         text-align: center;
         z-index: 9;
         /* padding-top: 2%; */
@@ -2544,7 +2634,7 @@ form fieldset .btn {
         height: 40.2%;
         margin-top: 10px;
         right: 10px;
-        background: #3822E4;
+        background: var(--color-principal);
         text-align: center;
         z-index: 9;
         display: flex;
@@ -2558,7 +2648,7 @@ form fieldset .btn {
         width: 48px;
         right: 10px;
         margin-top: 10px;
-        background-color: #3822E4;
+        background-color: var(--color-principal);
         text-align: center;
         z-index: 9;
         padding: 10px 0;
@@ -2601,7 +2691,7 @@ form fieldset .btn {
     /*social*/
 
     nav .navleft .socialMedia{   
-        background-color: #3822E4;
+        background-color: var(--color-principal);
         margin-top: 10px;
         width: 58px;
         height: 15.5%;
@@ -2633,7 +2723,7 @@ form fieldset .btn {
         width: 48px;
         right: 10px;
         height: 45%;
-        background: #3822E4;
+        background: var(--color-principal);
         text-align: center;
         z-index: 9;
         /* padding-top: 2%; */
@@ -2655,7 +2745,7 @@ form fieldset .btn {
         height: 41%;
         margin-top: 10px;
         right: 10px;
-        background: #3822E4;
+        background: var(--color-principal);
         text-align: center;
         z-index: 9;
         display: flex;
@@ -2669,7 +2759,7 @@ form fieldset .btn {
         width: 48px;
         right: 10px;
         margin-top: 10px;
-        background-color: #3822E4;
+        background-color: var(--color-principal);
         text-align: center;
         z-index: 9;
         padding: 10px 0;
@@ -2716,7 +2806,7 @@ form fieldset .btn {
         width: 48px;
         right: 10px;
         height: 45%;
-        background: #3822E4;
+        background: var(--color-principal);
         text-align: center;
         z-index: 9;
         /* padding-top: 2%; */
@@ -2738,7 +2828,7 @@ form fieldset .btn {
         height: 41%;
         margin-top: 10px;
         right: 10px;
-        background: #3822E4;
+        background: var(--color-principal);
         text-align: center;
         z-index: 9;
         display: flex;
@@ -2752,7 +2842,7 @@ form fieldset .btn {
         width: 48px;
         right: 10px;
         margin-top: 10px;
-        background-color: #3822E4;
+        background-color: var(--color-principal);
         text-align: center;
         z-index: 9;
         padding: 10px 0;
@@ -2795,7 +2885,7 @@ form fieldset .btn {
     /*social*/
 
     nav .navleft .socialMedia{   
-        background-color: #3822E4;
+        background-color: var(--color-principal);
         margin-top: 10px;
         width: 58px;
         height: 15.1%;
@@ -2829,7 +2919,7 @@ form fieldset .btn {
         width: 48px;
         right: 10px;
         height: 45%;
-        background: #3822E4;
+        background: var(--color-principal);
         text-align: center;
         z-index: 9;
         /* padding-top: 2%; */
@@ -2851,7 +2941,7 @@ form fieldset .btn {
         height: 41%;
         margin-top: 10px;
         right: 10px;
-        background: #3822E4;
+        background: var(--color-principal);
         text-align: center;
         z-index: 9;
         display: flex;
@@ -2865,7 +2955,7 @@ form fieldset .btn {
         width: 48px;
         right: 10px;
         margin-top: 10px;
-        background-color: #3822E4;
+        background-color: var(--color-principal);
         text-align: center;
         z-index: 9;
         padding: 10px 0;
@@ -2937,7 +3027,7 @@ form fieldset .btn {
     /*social*/
 
     nav .navleft .socialMedia{   
-        background-color: #3822E4;
+        background-color: var(--color-principal);
         margin-top: 10px;
         width: 58px;
         height: 14.6%;
@@ -2971,7 +3061,7 @@ form fieldset .btn {
         width: 48px;
         right: 10px;
         height: 45%;
-        background: #3822E4;
+        background: var(--color-principal);
         text-align: center;
         z-index: 9;
         /* padding-top: 2%; */
@@ -2993,7 +3083,7 @@ form fieldset .btn {
         height: 41%;
         margin-top: 10px;
         right: 10px;
-        background: #3822E4;
+        background: var(--color-principal);
         text-align: center;
         z-index: 9;
         display: flex;
@@ -3007,7 +3097,7 @@ form fieldset .btn {
         width: 48px;
         right: 10px;
         margin-top: 10px;
-        background-color: #3822E4;
+        background-color: var(--color-principal);
         text-align: center;
         z-index: 9;
         padding: 10px 0;
@@ -3027,6 +3117,12 @@ form fieldset .btn {
         /* background-color: gray; */
         /* width: 80px; */
         margin: 3.5% 0;
+    }
+}
+
+@media (max-width: 1880px) {  
+    .contacto .flexcont .rightContacto .contact-text p.asd{
+        padding-top: 10px;
     }
 }
 
@@ -3054,6 +3150,18 @@ form fieldset .btn {
 
 @media (min-width: 1051px) and (max-width: 1440px) {
 
+    .contacto .flexcont .rightContacto .contact-text{
+        padding: 80px 0 0 30px;
+    }
+
+    .contacto .flexcont .rightContacto .contact-text p{
+        padding-top: 10px;
+    }
+
+    .contacto .flexcont .rightContacto{
+        width: 38%;
+    }
+
     nav .navleft,
     nav .navRight{
         position: fixed;
@@ -3072,12 +3180,9 @@ form fieldset .btn {
         font-size: 28px;
     } 
 
-    .home .botones{
-        width: 27%;
-    } 
-
     .home .home-text .cabeza{
-        font-size: 82.77px;       
+        font-size: 82.77px;     
+        height: 100px;  
     } 
 
     .home .home-text img{
@@ -3093,7 +3198,25 @@ form fieldset .btn {
         font-size: 32.94px;
     } 
 
+    @media (min-width: 1358px) and (max-width: 1370px) {
+        .contacto {
+            background: linear-gradient(to right, var(--color-principal) 0%, var(--color-principal) 50%, #fff 50%, #fff 100%);
+        }
+
+        .contacto .flexcont .rightContacto{
+            right: 100px;
+        }
+    }
+
     @media (min-width: 1051px) and (max-width: 1357px){
+
+        .contacto {
+            background: linear-gradient(to right, var(--color-principal) 0%, var(--color-principal) 50%, #fff 50%, #fff 100%);
+        }
+
+        .contacto .flexcont .rightContacto{
+            right: 100px;
+        }
 
         nav .navleft,
         nav .navRight{
@@ -3220,6 +3343,7 @@ form fieldset .btn {
 
         .home .home-text .cabeza{
             font-size: 66px;
+            height: 80px;
         }
 
         .home .home-text img{
@@ -3328,37 +3452,30 @@ form fieldset .btn {
         width: 120%;
     }
 
-    /*Pantallas*/ 
+}
 
-    /* .contacto .flexcont {
-        width: 100px;
-    } */
+@media (min-width: 850px) and (max-width: 1050px) {
+
+    .contacto {
+        background: linear-gradient(to right, var(--color-principal) 0%, 
+        var(--color-principal) 40%, #fff 40%, #fff 100%);
+    }
+
+    .contacto .flexcont .rightContacto{
+        right: 80px;
+    }
 
     .contacto .flexcont .rightContacto .contact-text p{
         width: 450px;
     }
 
-     .contacto .flexcont .rightContacto .form{
+    .contacto .flexcont .rightContacto .form{
         width: 200px;
     } 
 
-    /*
-
-    .contacto .flexcont .rightContacto .contact-text{
-        width: 100px;
-    }
-*/
-    .contacto .flexcont .rightContacto .contact-text .conttextcont {
-        width: 200px !important;
-    }    
-
     .contacto .flexcont .rightContacto{
         width: 500px;
-    }     
-
-}
-
-@media (min-width: 850px) and (max-width: 1050px) {
+    }  
 
     nav .navleft,
         nav .navRight{
@@ -3427,12 +3544,13 @@ form fieldset .btn {
         font-size: 28px;
     }
 
-    .home .botones{
+    /* .home .botones{
         width: 27%;
-    }
+    } */
 
     .home .home-text .cabeza{
-        font-size: 60px;        
+        font-size: 60px;    
+        height: 80px; 
     }
 
     .home .home-text img{
@@ -3577,13 +3695,53 @@ form fieldset .btn {
 
     .wrapper .g img{
         top: -3px;
+    }    
+
+    @media (min-width: 850px) and (max-width: 1000px) {
+        .contacto {
+            background: linear-gradient(to right, var(--color-principal) 0%, 
+            var(--color-principal) 30%, #fff 0%, #fff 100%);
+        }
+    
+        .contacto .flexcont .rightContacto{
+            right: 60px;
+        }
+    
+        .contacto .flexcont .rightContacto .contact-text p{
+            width: 450px;
+        }
+    
+        .contacto .flexcont .rightContacto .form{
+            width: 200px;
+        } 
+    
+        .contacto .flexcont .rightContacto{
+            width: 500px;
+        }  
     }
 
-    /*Pantallas*/ 
+    @media (min-width: 850px) and (max-width: 982px){
+        
+        .home .home-text2 .text{
+            width: 350px;
+        }
 
-    /* .contacto .flexcont {
-        width: 100px;
-    } */
+        .home .botones{
+            width: 500px;
+        }
+    }
+}
+
+@media (max-width: 849px) {
+
+    .contacto {
+        background: linear-gradient(to right, var(--color-principal) 0%, 
+        var(--color-principal) 30%, #fff 0%, #fff 100%);
+    }
+
+    .contacto .flexcont .rightContacto{
+        right: 60px;
+    }
 
     .contacto .flexcont .rightContacto .contact-text p{
         width: 450px;
@@ -3593,23 +3751,9 @@ form fieldset .btn {
         width: 200px;
     } 
 
-    /*
-
-    .contacto .flexcont .rightContacto .contact-text{
-        width: 100px;
-    }
-*/
-    .contacto .flexcont .rightContacto .contact-text .conttextcont {
-        width: 200px !important;
-    }    
-
     .contacto .flexcont .rightContacto{
         width: 500px;
     }  
-
-}
-
-@media  (max-width: 849px) {
     
     /*branding*/
 
@@ -3691,6 +3835,284 @@ form fieldset .btn {
     .pagemid ul li{
         padding-bottom: 14px;
     }
+
+    @media (max-width: 820px) {
+        .contacto {
+            background: linear-gradient(to right, var(--color-principal) 0%, 
+            var(--color-principal) 20%, #fff 0%, #fff 100%);
+        }
+
+        .contacto .flexcont .leftContacto{
+            display: none;
+        }
+    
+        .contacto .flexcont .rightContacto{
+            right: 60px;
+        }
+    
+        .contacto .flexcont .rightContacto .contact-text p{
+            width: 450px;
+        }
+    
+        .contacto .flexcont .rightContacto .form{
+            width: 200px;
+        } 
+    
+        .contacto .flexcont .rightContacto{
+            width: 500px;
+        }  
+    }
+
+    @media (max-width: 730px) {
+        .contacto {
+            background: linear-gradient(to right, var(--color-principal) 0%, 
+            var(--color-principal) 10%, #fff 0%, #fff 100%);
+        }
+
+        .contacto .flexcont .leftContacto{
+            display: none;
+        }
+    
+        .contacto .flexcont .rightContacto{
+            right: 80px;
+        }
+    
+        .contacto .flexcont .rightContacto .contact-text p{
+            width: 450px;
+        }
+    
+        .contacto .flexcont .rightContacto .form{
+            width: 200px;
+        } 
+    
+        .contacto .flexcont .rightContacto{
+            width: 500px;
+        } 
+    }
+
+    @media (max-width: 670px) {
+        .contacto .flexcont .rightContacto{
+            right: 50px;
+        }
+
+        .contacto .flexcont .rightContacto .form{
+            padding-left: 30px;
+        }
+
+        form{
+            width: 380px;
+        }
+    }
+
+    @media (max-width: 620px) {
+        .contacto {
+            background: linear-gradient(to right, var(--color-principal) 0%, 
+            var(--color-principal) 5%, #fff 0%, #fff 100%);
+        }
+
+        .contacto .flexcont .rightContacto{
+            right: 40px;
+        }
+
+        .contacto .flexcont .rightContacto .form{
+            padding-left: 30px;
+        }
+
+        .contacto .flexcont .rightContacto .contact-text{
+            width: 400px;
+        }
+
+        form{
+            width: 380px;
+        }
+    }
+
+    @media (max-width: 568px) {
+        .contacto {
+            background: linear-gradient(to right, var(--color-principal) 0%, 
+            var(--color-principal) 5%, #fff 0%, #fff 100%);
+        }
+
+        .contacto .flexcont .rightContacto{
+            left: 40px;
+        }
+
+        .contacto .flexcont .rightContacto .form{
+            padding-left: 30px;
+        }
+
+        form{
+            width: 380px;
+        }
+    }
+
+    @media (max-width: 540px) {
+
+        .contacto .flexcont .rightContacto{
+            left: 40px;
+            width: 450px;
+        }
+
+        .contacto .flexcont .rightContacto .form{
+            padding-left: 30px;
+        }
+
+        .contacto .flexcont .rightContacto .contact-text{
+            width: 350px;
+        }
+
+        .contacto .flexcont .rightContacto .contact-text p{
+            width: 400px;
+        }
+
+        form{
+            width: 350px;
+        }
+    }
+
+    @media (max-width: 490px) {
+
+        .contacto .flexcont .rightContacto{
+            left: 40px;
+            width: 350px;
+        }
+
+        .contacto .flexcont .rightContacto .form{
+            padding-left: 30px;
+        }
+
+        .contacto .flexcont .rightContacto .contact-text{
+            width: 350px;
+        }
+
+        .contacto .flexcont .rightContacto .contact-text h1{
+            font-size: 40px;
+        }
+
+        .contacto .flexcont .rightContacto .contact-text p{
+            width: 350px;
+            font-size: 18px;
+        }
+
+        .contacto .flexcont .rightContacto .contact-text .btnMeeting{
+            width: 275px;
+        }
+
+        .contacto .flexcont .rightContacto .contact-text .btnMeeting a{
+            width: 260px;
+        }
+
+        .contacto .flexcont .rightContacto .contact-text .btnMeeting h2{
+            font-size: 1.3em;
+            height: 16px;
+        }
+
+        form{
+            width: 300px;
+        }
+    }
+
+
+    @media (max-width: 422px) {
+
+        .contacto .flexcont .rightContacto .contact-text{
+            width: 300px;
+        }
+        .contacto .flexcont .rightContacto .contact-text h1{
+            font-size: 35px;
+        }
+        form{
+            width: 250px;
+        }
+        .contacto .flexcont .rightContacto .form{
+            margin-top: 15px;
+        }
+        .contacto .flexcont .rightContacto .contact-text p{
+            width: 300px;
+            font-size: 18px;
+            padding-top: 10px;
+        }
+        .contacto .flexcont .rightContacto .contact-text .btnMeeting a{
+            width: 260px;
+        }
+        .contacto .flexcont .rightContacto .contact-text .btnMeeting{
+            width: 275px;
+            margin: 15px 0 0 0;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .contacto .flexcont .rightContacto{
+            left: 40px;
+            width: 300px;
+        }
+
+        .contacto .flexcont .rightContacto .close a{
+            right: 0px;
+        }
+
+        .contacto .flexcont .rightContacto .contact-text{
+            width: 300px;
+            padding-left: 15px;
+        }
+        .contacto .flexcont .rightContacto .form{
+            margin-top: 20px;
+            padding-left: 15px;
+        }
+        .contacto .flexcont .rightContacto .contact-text p{
+            width: 300px;
+            font-size: 16px;
+            padding-top: 10px;
+        }
+        .contacto .flexcont .rightContacto .contact-text .btnMeeting{
+            width: 275px;
+            margin: 15px 0 0 0;
+        }
+    }
+
+    @media (max-width: 375px) {
+        .contacto {
+            background: linear-gradient(to right, var(--color-principal) 0%, 
+            var(--color-principal) 0%, #fff 0%, #fff 100%);
+        }
+
+        .contacto .flexcont .rightContacto{
+            left: 35px;
+            width: 300px;
+        }
+        .contacto .flexcont .rightContacto .contact-text{
+            width: 300px;
+            padding-left: 0;
+        }
+        .contacto .flexcont .rightContacto .form{
+            margin-top: 20px;
+            padding-left: 0px;
+        }
+        .contacto .flexcont .rightContacto .contact-text h1{
+            font-size: 40px;
+        }
+        
+    }
+
+    @media (max-width: 350px) {
+
+        .contacto .flexcont .rightContacto{
+            left: 20px;
+            width: 300px;
+        }
+        .contacto .flexcont .rightContacto .contact-text{
+            width: 300px;
+            padding-left: 0;
+        }
+        .contacto .flexcont .rightContacto .form{
+            margin-top: 20px;
+            padding-left: 0px;
+        }
+        .contacto .flexcont .rightContacto .contact-text h1{
+            font-size: 40px;
+        }
+        
+    }
     
 }
 
@@ -3722,7 +4144,7 @@ form fieldset .btn {
 
     .enlaces {
         position: absolute;
-        background-color: #3822E4;
+        background-color: var(--color-principal);
         width: 100%;
         height: 100vh;
         z-index: 100;
@@ -3788,7 +4210,8 @@ form fieldset .btn {
 
     .home .home-text .cabeza{
         font-size: 60px; 
-        font-weight: 800;       
+        font-weight: 800;   
+        height: 80px;    
     }
 
     .home .home-text img{
@@ -3809,7 +4232,7 @@ form fieldset .btn {
     } 
 
     .home .botones{
-        width: 700px;
+        width: 800px;
     }
 
     .home .botones a{
@@ -3819,9 +4242,9 @@ form fieldset .btn {
 
     .home .icon{
         position: absolute;
-        padding-top: 110px;
+        padding-top: 220px;
         transform: scale(0.8);
-        width: 250px;
+        width: 230px;
     }
 
     .home .botones ul{
@@ -4180,7 +4603,7 @@ form fieldset .btn {
 
     .enlaces {
         position: absolute;
-        background-color: #3822E4;
+        background-color: var(--color-principal);
         width: 100%;
         height: 100vh;
         z-index: 100;
@@ -4231,7 +4654,7 @@ form fieldset .btn {
 
     .home {
         padding: 0 75px;
-        height: 800px;
+        height: 650px;
     } 
 
     
@@ -4246,7 +4669,8 @@ form fieldset .btn {
 
     .home .home-text .cabeza{
         font-size: 67px; 
-        font-weight: 800;       
+        font-weight: 800;    
+        height: 90px;   
     }
 
     .home .home-text img{
@@ -4267,12 +4691,12 @@ form fieldset .btn {
     }
 
     .home .home-text2 .text p{
-        font-size: 26.96px;
+        font-size: 20px;
     } 
 
     .home .botones a{
         padding: 5px 30px;
-        font-size: 33px;
+        font-size: 30px;
         font-weight: 500;
     }
 
@@ -4296,7 +4720,7 @@ form fieldset .btn {
     /*PORTFOLIO*/
 
     .selecttWork{
-        padding-top: 90px;
+        padding-top: 100px;
     }
 
     .selecttWork .title h2{
@@ -4351,6 +4775,8 @@ form fieldset .btn {
 
     .servicess {
         height: 400px;
+        padding: 130px 0;
+        padding-bottom: 0;
     }
 
     .servicess .services-cards{
@@ -4364,6 +4790,7 @@ form fieldset .btn {
     /*about us*/
     .digital{
         height: 400px;
+        padding-top: 120px;
     }
 
     .digital .container {
@@ -4419,11 +4846,60 @@ form fieldset .btn {
         top: 5px;
         left: 40px;
     }
+
+    @media (max-width: 722px) {
+        .home .home-text2 .icon{
+            left: 320px;
+        }
+    }
+
+    @media (max-width: 680px) {
+        .home .home-text2 .icon{
+            left: 290px;
+        }
+        .home .botones{
+            width: 280px;
+        }
+    }
+
+    @media (max-width: 650px) {
+        .home{
+            padding: 0 50px;
+        }
+
+        .home .home-text2 .icon{
+            left: 250px;
+            top: -250px;
+        }
+    }
+
+    @media (max-width: 590px) {
+        .home .home-text2 .icon{
+            left: 230px;
+            top: -200px;
+        }
+    }
+
+    @media (max-width: 565px) {
+
+        .home .home-text2 .icon{
+            left: 200px;
+        }
+
+        .home .botones a {
+            font-size: 25px;
+        }
+    }
+
+    @media (max-width: 535px) {
+
+        .home .home-text2 .icon{
+            left: 180px;
+        }
+    }
 }
 
 @media (max-width: 450px){
-
-    
 
     .servicess .container .margen .services-title p{
         display: block !important;
@@ -4514,7 +4990,7 @@ form fieldset .btn {
         transform-style: preserve-3d;
         -webkit-transition: .7s ease;
         transition: .1s ease;
-        border: 3px solid #3822E4;
+        border: 3px solid var(--color-principal);
         border-radius: 25px;
     }
 
@@ -4547,7 +5023,7 @@ form fieldset .btn {
         -webkit-box-align: center;
         -ms-flex-align: center;
         color: #fff;
-        background: #3822E4;
+        background: var(--color-principal);
         border-radius: 20px;    
     }
 
@@ -4575,7 +5051,7 @@ form fieldset .btn {
     }
     
     .wrap1 .tarjeta .adelante .servicess-img h2{
-        color: #3822E4;
+        color: var(--color-principal);
         font-family: var(--fuente-nav);
         font-size: 50px;
         /* padding-top: px; */
@@ -4626,7 +5102,7 @@ form fieldset .btn {
     }
     
     .wrap1 .tarjeta .atras a{
-        color: #3822E4;
+        color: var(--color-principal);
         text-decoration: none;
         font-family: var(--fuente-nav);
         padding: 0 10px;
@@ -4891,6 +5367,7 @@ form fieldset .btn {
     }
 }
 
+
 @media (min-width: 376px) and (max-width: 450px){
 
     main{
@@ -4939,7 +5416,7 @@ form fieldset .btn {
     }
 
     .home .botones ul li.bransss{
-        width: 202px;
+        width: 210px;
     }
 
     .home .botones ul li.branssss{
@@ -5272,7 +5749,7 @@ form fieldset .btn {
 
     .enlaces {
         position: absolute;
-        background-color: #3822E4;
+        background-color: var(--color-principal);
         width: 100%;
         height: 100vh;
         z-index: 100;
@@ -5374,7 +5851,7 @@ form fieldset .btn {
     }
 
     .home .botones .bransss{
-        width: 165px;
+        width: 170px;
     }
 
     .home .botones .branssss{

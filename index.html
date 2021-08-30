@@ -10,8 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;800;900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 
@@ -35,7 +36,7 @@
                             <li><a href="#portfolio" id="work">Work</a></li>
                             <li><a href="#services" id="whatwedo">What we do</a></li>
                             <li><a href="#abouts" id="about">About</a></li>
-                            <li><a href="" id="contact">Contact</a></li>
+                            <li><a href="#contact" id="contact" class="contactm" >Contact</a></li>
                         </ul>  
                     </div>
                     <div class="navbutton">
@@ -101,7 +102,7 @@
                             <a href="#portfolio">P<br>O<br>R<br>T<br>F<br>O<br>L<br>I<br>O</a>
                         </div> 
                         <div class="dark">
-                            <a href=""><img src="icons/interruptor.svg" alt=""></a>
+                            <a class="change-theme switchDark activado" id="switch"><img src="icons/interruptor.svg" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -113,15 +114,18 @@
                     <div class="flexcont">
                         <div class="leftContacto">
                             <div class="flecha-cont">
-                                <img src="icons/flechaCont.svg" alt="">
+                                <img src="icons/flechaCont.svg" alt="flecha">
                             </div>  
                             <div class="imgcont">
-                                <img src="icons/logo-contact.svg" alt="">
+                                <img src="icons/logocontactcopia.svg" alt="icono">
                             </div>                    
                         </div>
                         <div class="rightContacto">
                             <div class="close">
-                              <a><img src="icons/x-contact.svg" alt=""></a>
+                              <a>
+                                  <img id="nerdazulmm" src="icons/xcontactcopia.svg" alt="x-close">
+                                  <img id="nerdrojomm" class="nerdrojo" src="icons/closecontactrojo.svg" alt="x-close">
+                                </a>
                             </div>
                             <div class="contact-text">
                                 <div class="conttextcont">
@@ -132,25 +136,26 @@
                                     <div class="btnMeeting">
                                         <a href="">
                                             <h2>SCHEDULE A MEETING</h2>
-                                            <img src="icons/webcam.svg" alt="">
+                                            <img id="nerdazulnn" src="icons/webcam.svg" alt="">
+                                            <img id="nerdrojonn" class="nerdrojo" src="icons/webcontactrojo.svg" alt="">
                                         </a>
                                     </div>
-                                    <p>Or describe your project in a message:</p>
+                                    <p class="asd">Or describe your project in a message:</p>
                                 </div>
                             </div>
                             <div class="form">
                                 <form class="formulario containerform" id="fs-frm" name="complaint-form" accept-charset="utf-8"
-                                    action="php/form.php">
+                                    action="php/thanks.php" method="post">
                                     <fieldset id="fs-frm-inputs">
-                                        <input type="text" autocomplete="off" name="Nombre" id="full-name" placeholder="Name"
+                                        <input type="text" autocomplete="off" name="nombre" id="full-name" placeholder="Name"
                                         required="">
-                                        <input type="number" autocomplete="off" name="Teléfono" id="telephone" placeholder="Phone">
-                                        <input type="email" autocomplete="off" name="Email" id="email-address" placeholder="Email"
+                                        <input type="number" autocomplete="off" name="teléfono" id="telephone" placeholder="Phone">
+                                        <input type="email" autocomplete="off" name="email" id="email-address" placeholder="Email"
                                         required="">                                            
-                                        <textarea rows="6" autocomplete="off" name="Mensaje" id="complaint" placeholder="How can we help"
+                                        <textarea rows="6" autocomplete="off" name="mensaje" id="complaint" placeholder="How can we help"
                                         required=""></textarea>
                                         <!-- <input type="hidden" name="_subject" id="email-subject" value="Contacto nERD"> -->
-                                        <input class="btn button bransssss nav-toggler4" type="submit" value="SEND">
+                                        <input class="btn button" type="submit" value="SEND">
                                     </fieldset>                           
                                 </form>
                             </div>
@@ -316,7 +321,8 @@
         <div class="home">
             <div class="home-text">
                 <h2 class="cabeza">we are</h2>
-                <img src="icons/logo.svg" alt="">
+                <img id="nerdazul" src="icons/logo.svg" alt="">
+                <img id="nerdrojo" class="nerdrojo" src="icons/nerdrojo.svg" alt="">
                 <h2 class="pie">Studio Design</h2>
             </div>
             <div class="home-text2">
@@ -335,18 +341,21 @@
                         <div class="icon-map contactr">
                             <a href="#contact" class="nav-toggler5">
                                 <div class="img-top">
-                                    <img class="img1" src="icons/start-a-proyect.svg" alt="">
+                                    <img id="nerdazulq" class="img1" src="icons/start-a-proyect.svg" alt="">
+                                    <img id="nerdrojoq" class="nerdrojo" src="icons/startrojo.svg" alt="">
                                 </div>
                                 <div class="img-bot">
-                                    <img src="icons/logo-design.svg" alt="logo-personaje">
+                                    <img id="nerdazule" src="icons/logo-design.svg" alt="logo-personaje">
+                                    <img id="nerdrojoe" class="nerdrojo" src="icons/iconorojo.svg" alt="">
                                 </div>
                                 <div class="img-flecha">
-                                    <img src="icons/flecha.svg" alt="logo-personaje">
+                                    <img id="nerdazulw" src="icons/flecha.svg" alt="logo-personaje">
+                                    <img id="nerdrojow" class="nerdrojo" src="icons/flecharojo.svg" alt="">
                                 </div>
                             </a>
                         </div>   
                     </div>                 
-                </div> 
+                </div>
             </div>       
         </div>
     </section>
@@ -428,8 +437,10 @@
                                 <div class="tarjeta">
                                     <div class="adelante card1">
                                         <div class="servicess-img">
-                                            <img class="icon-brand" src="icons/branding.svg" alt="">
-                                            <img class="flecha2" src="icons/flecha2.svg" alt="">
+                                            <img id="nerdazult" class="icon-brand" src="icons/branding.svg" alt="">
+                                            <img id="nerdrojot" class="icon-brand nerdrojo" src="icons/brandingrojo.svg" alt="">
+                                            <img id="nerdazuly" class="flecha2" src="icons/flecha2.svg" alt="">
+                                            <img id="nerdrojoy" class="flecha2 nerdrojo" src="icons/flecharojaa.svg" alt="">
                                             <div class="servicess-title">
                                                 <h2 class="titlebran">branding</h2>
                                             </div>
@@ -448,8 +459,10 @@
                                             </ul>
                                             <div class="card1-button contacty">
                                                 <a href="#contact" class="nav-toggler6">
-                                                    <img src="icons/button1.svg" alt="">                                            
-                                                    <img class="flecha" src="icons/flecha-button.svg" alt="">
+                                                    <img id="nerdazuls" src="icons/button1.svg" alt="">
+                                                    <img id="nerdrojos" class="nerdrojo" src="icons/brandingbuttonrojo.svg" alt="">                                            
+                                                    <img id="nerdazulf" class="flecha" src="icons/flecha-button.svg" alt="">
+                                                    <img id="nerdrojof" class="flecha nerdrojo" src="icons/flecharojaaa.svg" alt="">
                                                     <h3>Start a proyect</h3>
                                                 </a>
                                             </div>
@@ -461,8 +474,10 @@
                                 <div class="tarjeta">
                                     <div class="adelante card1">
                                         <div class="servicess-img ux">
-                                            <img class="icon-brand" src="icons/ux-ui.svg">
-                                            <img class="flecha2" src="icons/flecha2.svg" alt="">
+                                            <img id="nerdazulh" class="icon-brand" src="icons/ux-ui.svg">
+                                            <img id="nerdrojoh" class="icon-brand nerdrojo" src="icons/uxroja.svg" alt="">
+                                            <img id="nerdazulm" class="flecha2" src="icons/flecha2.svg" alt="">
+                                            <img id="nerdrojom" class="flecha2 nerdrojo" src="icons/flecharojaa.svg" alt="">
                                             <div class="servicess-title">
                                                 <h2 class="titlebran">ux/ui design</h2>
                                             </div>
@@ -479,8 +494,10 @@
                                             </ul>
                                             <div class="card1-button contactu">
                                                 <a href="#contact">
-                                                    <img src="icons/button2.svg" alt="">                                            
-                                                    <img class="flecha" src="icons/flecha-button.svg" alt="">
+                                                    <img id="nerdazulp" src="icons/button2.svg" alt=""> 
+                                                    <img id="nerdrojop" class="nerdrojo" src="icons/uxbuttonrojo.svg" alt="">
+                                                    <img id="nerdazuld" class="flecha" src="icons/flecha-button.svg" alt="">
+                                                    <img id="nerdrojod" class="flecha nerdrojo padi" src="icons/flecharojaaa.svg" alt="">
                                                     <h3>Start a proyect</h3>
                                                 </a>
                                             </div>
@@ -492,8 +509,10 @@
                                 <div class="tarjeta">
                                     <div class="adelante card1">
                                         <div class="servicess-img creation">
-                                            <img class="icon-brand" src="icons/creation.svg" alt="">
-                                            <img class="flecha2" src="icons/flecha2.svg" alt="">
+                                            <img id="nerdazulb" class="icon-brand" src="icons/creation.svg" alt="">
+                                            <img id="nerdrojob" class="icon-brand nerdrojo" src="icons/creationroja.svg" alt="">
+                                            <img id="nerdazulv" class="flecha2" src="icons/flecha2.svg" alt="">
+                                            <img id="nerdrojov" class="flecha2 nerdrojo" src="icons/flecharojaa.svg" alt="">
                                             <div class="servicess-title">
                                                 <h2 class="titlebran">creation</h2>
                                             </div>
@@ -512,8 +531,10 @@
                                             </ul>
                                             <div class="card1-button contacti">
                                                 <a href="#contact">
-                                                    <img class="imgbut" src="icons/button3.svg" alt="">                                            
-                                                    <img class="flecha" src="icons/flecha-button.svg" alt="">
+                                                    <img id="nerdazulg" class="imgbut" src="icons/button3.svg" alt="">
+                                                    <img id="nerdrojog" class="imgbut nerdrojo" src="icons/creationbuttonrojo.svg" alt="">                                            
+                                                    <img id="nerdazulj" class="flecha" src="icons/flecha-button.svg" alt="">
+                                                    <img id="nerdrojoj" class="flecha nerdrojo" src="icons/flecharojaaa.svg" alt="">
                                                     <h3>Start a proyect</h3>
                                                 </a>
                                             </div>
@@ -545,8 +566,8 @@
                                                 <li>Branded</li>
                                                 <li>Art Direction</li>
                                             </ul>
-                                            <div class="card1-button">
-                                                <a href="#">
+                                            <div class="card1-button contacta">
+                                                <a href="#contact">
                                                     <img src="icons/button1.svg" alt="">                                            
                                                     <img class="flecha" src="icons/flecha-button.svg" alt="">
                                                     <h3>Start a proyect</h3>
@@ -576,8 +597,8 @@
                                                 <li>E commerces</li>
                                                 <li>Digital Products</li>
                                             </ul>
-                                            <div class="card1-button">
-                                                <a href="#">
+                                            <div class="card1-button contactw">
+                                                <a href="#contact">
                                                     <img src="icons/button2.svg" alt="">                                            
                                                     <img class="flecha" src="icons/flecha-button.svg" alt="">
                                                     <h3>Start a proyect</h3>
@@ -611,8 +632,8 @@
                                                 <li>Content Brand</li>
                                                 <li>Stop Motion</li>
                                             </ul>
-                                            <div class="card1-button">
-                                                <a href="#">
+                                            <div class="card1-button contactp">
+                                                <a href="#contact">
                                                     <img class="imgbut" src="icons/button3.svg" alt="">                                            
                                                     <img class="flecha" src="icons/flecha-button.svg" alt="">
                                                     <h3>Start a proyect</h3>
@@ -622,8 +643,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tarjeta-wrap1">
-                                <a href="">
+                            <div class="tarjeta-wrap1 contactn">
+                                <a href="#contact">
                                     <div class="tarjeta">
                                         <div class="adelante card1">
                                             <div class="servicess-img creation">
@@ -652,7 +673,8 @@
                         </p>
                         <p class="p1">A creative and proactive team  of designers and developers who love creating brand and digital experiences. <br> <br> We believe in the power of collaboration, shared knowledge and steady improvement. We win or learn.
                         </p>
-                        <img src="icons/vector.svg" alt="">
+                        <img id="nerdazulc" src="icons/vector.svg" alt="">
+                        <img id="nerdrojoc" class="imgvector nerdrojo" src="icons/vectorrojo.svg" alt="">
                     </div>
                 </div>
             </div>
@@ -661,21 +683,58 @@
         <section class="partnerds">
             <div class="container">
                 <div class="margen">
-                    <img class="partnerds-logo" src="icons/partnerds.svg" alt="">
+                    <img id="nerdazulz" class="partnerds-logo" src="icons/partnerds.svg" alt="">
+                    <img id="nerdrojoz" class="partnerds-logo nerdrojo" src="icons/partnerdsrojo.svg" alt="">
                     <h2>Brands</h2>
                     <div class="wrapper">
-                        <div class="box a"><img src="icons/plazavea.svg" alt=""></div>
-                        <div class="box b"><img src="icons/reeebok.svg" alt=""></div>
-                        <div class="box c"><img src="icons/subway.svg" alt=""></div>
-                        <div class="box d"><img src="icons/sodimac.svg" alt=""></div>
-                        <div class="box e"><img src="icons/Petramas.svg" alt=""></div>
-                        <div class="box f"><img src="icons/interbank.svg" alt=""></div>
-                        <div class="box g"><img src="icons/newbalance.svg" alt=""></div>
-                        <div class="box h"><img src="icons/puntoazul.svg" alt=""></div>
-                        <div class="box a a1"><img src="icons/plazavea.svg" alt=""></div>
-                        <div class="box b b1"><img src="icons/reeebok.svg" alt=""></div>
-                        <div class="box c c1"><img src="icons/subway.svg" alt=""></div>
-                        <div class="box d d1"><img src="icons/sodimac.svg" alt=""></div>
+                        <div class="box a">
+                            <img id="nerdazuli" src="icons/plazavea.svg" alt="">
+                            <img id="nerdrojoi" class="nerdrojo" src="icons/plazavearojo.svg" alt="">
+                        </div>
+                        <div class="box b">
+                            <img id="nerdazula" src="icons/reeebok.svg" alt="">
+                            <img id="nerdrojoa" class="nerdrojo" src="icons/reebokrojo.svg" alt="">
+                        </div>
+                        <div class="box c">
+                            <img id="nerdazulbb" src="icons/subway.svg" alt="">
+                            <img id="nerdrojobb" class="nerdrojo" src="icons/subwayrojo.svg" alt="">
+                        </div>
+                        <div class="box d">
+                            <img id="nerdazulcc" src="icons/sodimac.svg" alt="">
+                            <img id="nerdrojocc" class="nerdrojo" src="icons/sodimacrojo.svg" alt="">
+                        </div>
+                        <div class="box e">
+                            <img id="nerdazuldd" src="icons/Petramas.svg" alt="">
+                            <img id="nerdrojodd" class="nerdrojo" src="icons/petramasrojo.svg" alt="">
+                        </div>
+                        <div class="box f">
+                            <img id="nerdazulee" src="icons/interbank.svg" alt="">
+                            <img id="nerdrojoee" class="nerdrojo" src="icons/interbankrojo.svg" alt="">
+                        </div>
+                        <div class="box g">
+                            <img id="nerdazulff" src="icons/newbalance.svg" alt="">
+                            <img id="nerdrojoff" class="nerdrojo" src="icons/newbalancerojo.svg" alt="">
+                        </div>
+                        <div class="box h">
+                            <img id="nerdazulgg" src="icons/puntoazul.svg" alt="">
+                            <img id="nerdrojogg" class="nerdrojo" src="icons/puntoazulrojo.svg" alt="">
+                        </div>
+                        <div class="box a a1">
+                            <img id="nerdazulhh" src="icons/plazavea.svg" alt="">
+                            <img id="nerdrojohh" class="nerdrojo" src="icons/plazavearojo.svg" alt="">
+                        </div>
+                        <div class="box b b1">
+                            <img id="nerdazulii" src="icons/reeebok.svg" alt="">
+                            <img id="nerdrojoii" class="nerdrojo" src="icons/reebokrojo.svg" alt="">
+                        </div>
+                        <div class="box c c1">
+                            <img id="nerdazuljj" src="icons/subway.svg" alt="">
+                            <img id="nerdrojojj" class="nerdrojo" src="icons/subwayrojo.svg" alt="">
+                        </div>
+                        <div class="box d d1">
+                            <img id="nerdazulkk" src="icons/sodimac.svg" alt="">
+                            <img id="nerdrojokk" class="nerdrojo" src="icons/sodimacrojo.svg" alt="">
+                        </div>
                     </div> 
                     <div class="listpart">
                         <ul>
@@ -699,7 +758,7 @@
     </main>
     <footer>
     </footer>
-
+    
     <script src="js/main.js"></script>
 </body>
 </html>

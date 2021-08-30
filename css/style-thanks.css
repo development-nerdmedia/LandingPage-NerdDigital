@@ -1,0 +1,211 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+    --fuente-nav: 'Epilogue', sans-serif;
+    --fuente-home: 'Poppins', sans-serif;
+    --fuente-Manrope: 'Manrope', sans-serif;
+    --color-principal: #3822E4;
+    --fuente-anonymous:'Anonymous Pro', monospace;
+}
+
+body{
+    background-color: #3822E4;
+}
+
+.thanks{
+    padding: 50px 0;
+}
+
+.container{
+    padding: 0 70px;
+}
+
+.padd .cabezapage h2{
+    font-family: var(--fuente-home);
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.cabezapage {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagemidd .title{
+    width: 330px;
+    margin-bottom: 50px;
+}
+
+.pagemidd{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagemidd h1{
+    color: white;
+    font-family: var(--fuente-nav);
+    font-size: 70px;
+    padding-bottom: 2%;
+}
+
+.padd .asdd h1{
+    font-size: 87px;
+}
+
+.pagemidd p{
+    color: #24FE7C;
+    font-size: 40px;
+    width: 350px;
+    font-family: var(--fuente-Manrope);
+
+}
+
+.pagemidd p{
+    padding: 0 0 5% 110px;
+}
+
+.downth p {
+    width: 100%;
+    bottom: 20px;
+    color: white;
+}
+
+.pagbtnc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -100px;
+    /* height: 500px; */
+}
+
+.pagbtnc a{
+    color: #3822E4;
+    background: #fff;
+    text-decoration: none;    
+    padding: 4px 35px;
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    border-radius: 20px;
+    font-family: var(--fuente-nav);
+    /* border: 2px solid #fff; */
+    position: absolute;
+    top: 10px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+
+.pagbtnc .btn2{
+    padding: 3.5px 25px;
+}
+
+.pagbtnc a h2 {
+    padding-right: 10px;
+    font-size: 23px;
+    position: relative;
+    top: 3px;
+}
+
+.pagbtnc a:hover{
+    background: #24FE7C;
+}
+
+.pagbtnc .btn2{
+    position: relative;
+    top: 110px;
+    width: 290px;
+    margin-left: 100px;
+}
+
+.pagbtnc .btn2 .prime {
+    width: 55px;
+}
+
+@font-face {
+    font-family: "Manuka";
+    src: url("../font/test-manuka-condensed-bold.woff2");
+}
+
+.downth{
+    font-family: "Manuka";
+}
+
+.downth p {
+    width: 100%;
+    bottom: 20px;
+    color: white;
+}
+.marqu3{
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+}
+
+.marqu3 span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marqu3 34s linear infinite;
+    animation-iteration-count: 1;
+    font-family: "Manuka";
+    font-size: 50px;
+}
+
+@keyframes marqu3 {
+    0% {
+      transform: translate(-50%, 0);
+    }
+    100% {
+      transform: translate(100%, 0);
+    }
+}
+
+.marquo {
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+}
+  
+.marquo span {
+    display: inline-block; 
+    padding-left: 100%;
+    animation: marquo 22.7s linear infinite;
+    font-family: "Manuka";
+    font-size: 50px;
+}
+  
+.marquo2 span {
+    animation-delay: 11.35s;
+}
+  
+@keyframes marquo {
+    0% {
+      transform: translate(-100%, 0);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+}
+
+
