@@ -26,7 +26,7 @@ body{
     padding: 50px 0;
 }
 
-.container{
+.cabezapage{
     padding: 0 70px;
 }
 
@@ -76,6 +76,7 @@ body{
 
 .pagemidd p{
     padding: 0 0 5% 110px;
+    font-style: italic;
 }
 
 .downth p {
@@ -155,11 +156,29 @@ body{
     bottom: 20px;
     color: white;
 }
+
+.down {
+    background-color: var(--color-principal);
+    bottom: 10px;
+    padding: 5px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+    height: 38px;
+}
+
+.down p{
+    top: -3.5px;
+}
+
+
 .marqu3{
     margin: 0 auto;
     white-space: nowrap;
     overflow: hidden;
     position: absolute;
+    color: #fff;
 }
 
 .marqu3 span {
@@ -185,6 +204,7 @@ body{
     white-space: nowrap;
     overflow: hidden;
     position: absolute;
+    color: #fff;
 }
   
 .marquo span {
@@ -205,6 +225,150 @@ body{
     }
     100% {
       transform: translate(0, 0);
+    }
+}
+
+@media (max-width: 460px) {
+    .cabezapage{
+        padding: 0 30px;
+    }
+    .container .padd .cabezapage h2{
+        font-size: 25px;
+    }
+
+    .container .padd .cabezapage .closebrannnn{
+        height: 30px;
+    }
+
+    .container .padd .cabezapage .closebrannnn a img{
+        width: 30px;
+    }
+
+    .pagemidd {
+        height: 500px;
+    }
+
+    .pagemidd p {
+        padding: 0;
+    }
+
+    .pagbtnc{
+        top: -20px;
+        left: -55px;
+    }
+}
+
+@media (max-width: 400px) {
+    .cabezapage{
+        padding: 0 30px;
+    }
+    .container .padd .cabezapage h2{
+        font-size: 25px;
+    }
+
+    .container .padd .cabezapage .closebrannnn{
+        height: 30px;
+    }
+
+    .container .padd .cabezapage .closebrannnn a img{
+        width: 30px;
+    }
+
+    .pagemidd {
+        height: 500px;
+    }
+
+    .padd .asdd h1{
+        font-size: 70px;
+        padding-left: 20px;
+    }
+
+    .pagemidd p {
+        padding: 0;
+        font-size: 30px;
+        padding-left: 10px;
+        width: 300px;
+    }
+
+    .pagbtnc{
+        top: -60px;
+        left: -40px;
+        transform: scale(0.9);
+    }
+}
+
+@media (max-width: 375px) {
+    .cabezapage{
+        padding: 0 30px;
+    }
+    .container .padd .cabezapage h2{
+        font-size: 25px;
+    }
+
+    .container .padd .cabezapage .closebrannnn{
+        height: 30px;
+    }
+
+    .container .padd .cabezapage .closebrannnn a img{
+        width: 30px;
+    }
+
+    .pagemidd {
+        height: 500px;
+    }
+
+    .padd .asdd h1{
+        font-size: 70px;
+        padding-left: 20px;
+    }
+
+    .pagemidd p {
+        position: relative;
+        padding: 0;
+        font-size: 30px;
+        padding-left: 10px;
+        width: 250px;
+        top: -60px;
+        left: 40px;        
+    }
+
+    .pagbtnc{
+        top: -100px;
+        left: -40px;
+        transform: scale(0.9);
+    }
+
+    .pagbtnc a{
+        padding: 4px 25px;
+    }
+
+    .pagbtnc .btn2{
+        padding: 3.5px 18px;
+        top: 100px;
+    }
+}
+
+@media (max-width: 340px) {
+    .container .padd .cabezapage h2{
+        font-size: 20px;
+    }
+    .pagemidd{
+        transform: scale(0.9);
+    }
+
+    .pagbtnc{
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 322px) {
+    .pagemidd{
+        transform: scale(0.8);
+    }
+
+    .pagbtnc{
+        top: -150px;
+        transform: scale(0.6);
     }
 }
 
