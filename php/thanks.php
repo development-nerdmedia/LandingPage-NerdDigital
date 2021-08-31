@@ -46,34 +46,32 @@ mail($to, $email_subject, $email_body, $headers);
                         <p>In a few moments we are going to contact you </p>  
                     </div>
                     <div class="pagbtnc">
-                        <!-- <div class="close closebrannnn closeani"> -->
-                            <a href="../index.html">
-                                <img src="../icons/button2.svg" alt="">
-                                <img src="../icons/flechath.svg" alt="">
-                                <h2>GO HOME</h2>
-                            </a> 
-                        <!-- </div>    -->
-                        <a class="btn2" href="https://www.instagram.com/?hl=es" target="_blank">
+                        <a href="../index.html">
+                            <img src="../icons/button2.svg" alt="">
+                            <img src="../icons/flechath.svg" alt="">
+                            <h2>GO HOME</h2>
+                        </a> 
+                        <a class="btn2" href="https://www.instagram.com/nerd_agencia/" target="_blank">
                             <img class="prime" src="../icons/button3.svg" alt="">
                             <img src="../icons/flechath.svg" alt="">
                             <h2>GO INSTAGRAM</h2>
                         </a>  
                     </div>
-                </div>          
-            </div>
-            <div class="downth">                    
-                <p class="marqu3">
-                    <span>WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK -&nbsp;</span>
-                </p>
-                <p class="marquo">
-                    <span>WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - 
-                        WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK -&nbsp;</span>
-                </p>
-                <p class="marquo marquo2">
-                    <span>WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - 
-                    WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK -&nbsp;</span>
-                </p>
-            </div>
+                    <div class="down">                    
+                        <p class="marqu3">
+                            <span>WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK -&nbsp;</span>
+                        </p>
+                        <p class="marquo">
+                            <span>WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - 
+                                WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK -</span>
+                        </p>
+                        <p class="marquo marquo2">
+                            <span>WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK - 
+                                WORK - WORK - WORK - WORK - WORK - WORK - WORK - WORK -&nbsp;</span>
+                        </p>
+                    </div>
+                </div>                         
+            </div>            
         </section>
     </main>
         <script src="../js/main.js"></script>
