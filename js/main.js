@@ -95,6 +95,15 @@ function toggleNav13(){
     document.querySelector(".contacto").classList.toggle("open");
 }
 
+/* boton branding menu movil*/
+const navToggler14 = document.querySelector(".contactz");
+navToggler14.addEventListener("click", toggleNav8);
+
+function toggleNav14(){
+    navToggler13.classList.toggle("active");
+    document.querySelector(".contacto").classList.toggle("open");
+}
+
 
 
 /* TOGGLE NAVBAR BRANDING*/
@@ -212,6 +221,14 @@ const nerdrojomm = document.getElementById("nerdrojomm");
 const nerdazulmm = document.getElementById("nerdazulmm");
 const nerdrojonn = document.getElementById("nerdrojonn");
 const nerdazulnn = document.getElementById("nerdazulnn");
+const nerdrojooo = document.getElementById("nerdrojooo");
+const nerdazuloo = document.getElementById("nerdazuloo");
+const nerdrojopp = document.getElementById("nerdrojopp");
+const nerdazulpp = document.getElementById("nerdazulpp");
+const nerdrojoqq = document.getElementById("nerdrojoqq");
+const nerdazulqq = document.getElementById("nerdazulqq");
+const nerdrojorr = document.getElementById("nerdrojorr");
+const nerdazulrr = document.getElementById("nerdazulrr");
 switchButton.addEventListener("click", ()=> {
     document.body.classList.toggle('dark-theme');
     nerdrojo.classList.toggle('nerdrojoo');
@@ -278,6 +295,14 @@ switchButton.addEventListener("click", ()=> {
     nerdrojomm.classList.toggle('nerdrojo');
     nerdrojonn.classList.toggle('nerdrojoo');
     nerdrojonn.classList.toggle('nerdrojo');
+    nerdrojooo.classList.toggle('nerdrojoo');
+    nerdrojooo.classList.toggle('nerdrojo');
+    nerdrojopp.classList.toggle('nerdrojoo');
+    nerdrojopp.classList.toggle('nerdrojo');
+    nerdrojoqq.classList.toggle('nerdrojoo');
+    nerdrojoqq.classList.toggle('nerdrojo');
+    nerdrojorr.classList.toggle('nerdrojoo');
+    nerdrojorr.classList.toggle('nerdrojo');
     switchButton.classList.toggle('darkcambio');
     switchButton.classList.toggle('activado');
     nerdazul.classList.toggle('nerdazull');
@@ -312,6 +337,10 @@ switchButton.addEventListener("click", ()=> {
     nerdazulkk.classList.toggle('nerdazull');
     nerdazulmm.classList.toggle('nerdazull');
     nerdazulnn.classList.toggle('nerdazull');
+    nerdazuloo.classList.toggle('nerdazull');
+    nerdazulpp.classList.toggle('nerdazull');
+    nerdazulqq.classList.toggle('nerdazull');
+    nerdazulrr.classList.toggle('nerdazull');
 })
 
 
